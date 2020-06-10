@@ -1,0 +1,267 @@
+<body>
+
+    <head></head>
+
+    <body>
+        <div class="full-content">
+            <h2>Click Class</h2>
+            <hr>
+            <h3>List of Methods</h3>
+            <ul class="count">
+                <li><a href="#buttonbyname">clickButtonByName(LocatorType, String) (boolean)</a></li>
+                <li><a href="#imagebyxpath">clickImageByXpath(LocatorType, String) (boolean)
+                    </a></li>
+                <li><a href="#doubleclickbyxpath">doubleClickOnElementByXpath(LocatorType, String) (boolean</a></li>
+                <li><a href="#doubleclickbyid">doubleClickOnImageById(LocatorType, String) (boolean)</a></li>
+                <li><a href="#performclick">performClick(LocatorType, String) (boolean)</a></li>
+                <li><a href="#performdoubleclick">PerformDoubleClick(LocatorType, String) (boolean)</a></li>
+                <li><a href="#performrightclick">performRightClick(LocatorType, String) (boolean)</a></li>
+                <li><a href="#rightclickbyxpath">rightClickOnElementByXpath(LocatorType, String) (boolean)</a></li>
+                <li><a href="#actionclick">setDriverForActionClick(WebDriver) (void)</a><br>
+                    <li> <a href="#finder">setFinder(IFind)</a></li>
+
+            </ul>
+
+            <div id="buttonbyname"><br>
+                <h3>1. public boolean clickButtonByName(LocatorType locator, String button)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean clickButtonByName(LocatorType locator, String button)</h4>
+                    <li><b>Purpose: </b></li>
+                    <ul>
+                        <li>This method perform click on button by there name.</li>
+                        <li>We have to provide button name to this method.</li>
+                    </ul>
+                    <li><b>Parameters: </b></li>
+                    <p>This method having Two parameters:</p>
+                    <ul>
+                        <li>Locator - It is identifier of element.</li>
+                        <li>Button - It contains value of locator which means button name.</li>
+                    </ul>
+                    <li><b>Returns: </b></li>
+                    <p>It returns true if button gets click otherwise return false.</p>
+
+                    <li><b>Exceptions: </b></li>
+                    <p>NoSuchElementException</p>
+
+                    <li><b>Uses:</b></li>
+                    <p><img src="resources/img/services guides/clickclass/Picture1.png"></p>
+                </ul>
+            </div>
+            <div id="imagebyxpath"><br>
+                <h3>2. public boolean clickImageByXpath(LocatorType locator, String image)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+
+                    <h4>public boolean clickImageByXpath(LocatorType locator, String image)</h4>
+
+                    <li><b>Purpose:</b></li>
+                    <p>This method select image by Xpath and perform click operation.</p>
+
+                    <li><b>Parameters: </b></li>
+                    <p>This method having two parameters</p>
+                    <ul>
+                        <li>Locator- It is identifier of element.</li>
+                        <li>Image- It is the value for locator type.</li>
+                    </ul>
+                    <li><b>Return:</b></li>
+                    <p>This method returns true if clicked the image otherwise false.</p>
+
+                    <li><b>Exceptions: </b></li>
+                    <p>NoSuchElementException</p>
+
+                    <li><b>Uses:</b></li>
+                    <p><img src="resources/img/services guides/clickclass/Picture2.png"></p>
+                </ul>
+            </div>
+            <div id="doubleclickbyxpath"><br>
+                <h3>3. public boolean doubleClickOnElementByXpath(LocatorType locator, String value)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean doubleClickOnElementByXpath(LocatorType locator, String value)</h4>
+                    <li><b>Purpose:</b></li>
+                    <p>This method perform double click on web element by using there Xpath.</p>
+
+                    <li><b>Parameters: </b></li>
+                    <p>This Method having two parameters:</p>
+                    <ul>
+                        <li>Locator - It is identifier of web element.</li>
+                        <li>Value - It is value of locator type.</li>
+                    </ul>
+                    <li><b>Return: </b></li>
+                    <p>It method returns true if double click successfully done otherwise returns false.</p>
+
+                    <li><b>Exceptions: </b></li>
+                    <p>NoSuchElementException</p>
+
+                    <li><b> Uses:</b></li>
+                    <p><img src="resources/img/services guides/clickclass/Picture3.png"></p>
+                </ul>
+            </div>
+            <div id="doubleclickbyid"><br>
+                <h3>4. public boolean doubleClickOnImageById(LocatorType locator, String image)</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean doubleClickOnImageById(LocatorType locator, String image)</h4>
+                    <li><b>Purpose:</b></li>
+
+                    <p>This method performs double click operation on given image by there Id.</p>
+
+                    <li><b>Parameters: </b></li>
+                    <p>This method having Two parameters:</p>
+                    <ul>
+                        <li>Locator- It is identifier of element.</li>
+                        <li>Image- It is value for locator type.</li>
+                    </ul>
+                    <li><b>Return:</b></li>
+                    <p>It returns true if image is clicked otherwise returns false.</p>
+
+                    <li><b>Exceptions: </b></li>
+                    <p>NoSuchElementException</p>
+
+                    <li><b>Uses:</b></li>
+                    <p><img src="resources/img/services guides/clickclass/Picture4.png"></p>
+                </ul>
+            </div>
+            <div id="performclick"><br>
+                <h3>5. public boolean performClick(LocatorType locator, String element)</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean performClick(LocatorType locator, String element)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method performs click operation on given element.</li>
+                        <li>We can click element by using any identifier of element.</li>
+                    </ul>
+                    <li><b>Parameters: </b></li>
+                    <p>This method having two parameters:</p>
+                    <ul>
+                        <li>Locator- It is identifier of web element.</li>
+                        <li>Element- It is value for locator type.</li>
+                    </ul>
+                    <li><b>Return:</b></li>
+                    <p>This method returns true if element gets click otherwise return false.</p>
+
+                    <li><b>Exceptions:</b></li>
+                    <ul>
+                        <li>NullPointerException</li>
+                        <li>illegalArgumentException</li>
+                    </ul>
+
+                    <li><b>Uses:</b></li>
+                    <p><img src="resources/img/services guides/clickclass/Picture5.png"></p>
+                </ul>
+            </div>
+            <div id="performdoubleclick"><br>
+                <h3>6. public boolean PerformDoubleClick(LocatorType loactor, String element)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean PerformDoubleClick(LocatorType loactor, String element)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method use to perform double click operation on element.</li>
+                        <li>We can perform double click by using any identifier of element.</li>
+                    </ul>
+                    <li><b>Parameters: </b></li>
+                    <p>This method having two parameters:</p>
+                    <ul>
+                        <li>Locator- It is identifier of element.</li>
+                        <li>Element- It is string value for locator type.</li>
+                    </ul>
+                    <li><b>Exceptions:</b></li>
+                    <ul>
+                        <li>NullPointerException</li>
+                        <li>illegalArgumentException</li>
+                    </ul>
+                    <b>
+                        <li>Return:
+                    </b>
+                    <li>
+                        </p>This method returns true if operation successfully done otherwise returns false.</p>
+                </ul>
+            </div>
+            <div id="performrightclick"><br>
+                <h3>7. public boolean performRightClick(LocatorType locator, String element)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean performRightClick(LocatorType locator, String element)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method use to perform right click on any element.</li>
+                        <li>We can use any identifier for performing this operation.</li>
+                    </ul>
+                    <li><b>Parameters: </b></li>
+                    <p>This method have two parameters:</p>
+                    <ul>
+                        <li>Locator- It is identifier for web element.</li>
+                        <li>Element- It is string value for locator type.</li>
+                    </ul>
+                    <li><b>Exceptions:</b></li>
+                    <ul>
+                        <li>NullPointerException</li>
+                        <li>illegalArgumentException</li>
+                    </ul>
+                    <li><b>Return:</b></li>
+                    <p>It returns true on successfully execution otherwise returns false.</p>
+                </ul>
+            </div>
+            <div id="rightclickbyxpath"><br>
+                <h3>8. public boolean rightClickOnElementByXpath(LocatorType, String)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean rightClickOnElementByXpath(LocatorType, String)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method performs right click operation on element.</li>
+                        <li>We can perform right click operation by using Xpath of that web element.</li>
+                    </ul>
+                    <li><b>Parameters: </b></li>
+                    <p>This method having two parameters :</p>
+                    <ul>
+                        <li>Locator- It is identifier of web element.</li>
+                        <li>Element- It is value for locator type.</li>
+                    </ul>
+                    <li><b>Return:</b></li>
+                    <p>This method returns true on successfully execution otherwise returns false.</p>
+
+                    <li><b>Exceptions: </b></li>
+                    <p>NoSuchElementException</p>
+
+                    <li><b>Uses:</b></li>
+                    <p><img src="resources/img/services guides/clickclass/Picture6.png"></p>
+                </ul>
+            </div>
+            <div id="actionclick"><br>
+                <h3>9. public void setDriverForActionClick(WebDriver driver)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public void setDriverForActionClick(WebDriver driver)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method accepts reference variable of WebDriver Interface, which will initialize to FirefoxDriver or InternetExplorerDriver or the ChromeDriver class constructor.</li>
+                        <li>This method is use to refer current instance variable.</li>
+                    </ul>
+                    <li><b>Returns:</b></li>
+                    <p>It will returns nothing.</p>
+                </ul>
+            </div>
+            <div id="finder"><br>
+                <h3>10. Public void setFinder(IFind finder)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+
+                    <h4>Public void setFinder(IFind finder)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method accepts the reference variable of IFind interface.</li>
+                        <li>This method is use to refer instance variable.</li>
+                    </ul>
+
+                    <li><b>Returns:</b></li>
+                    <p>It will returns Nothing.</p>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+    </html>

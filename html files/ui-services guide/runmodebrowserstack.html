@@ -1,0 +1,94 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>RunModeBrowser Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#runmodebrowserstack">public RunModeBrowserStack(String enableLocal, String os,String
+                    osVersion,String
+                    browser,
+                    String
+                    browserVersion)</a></li>
+            <li><a href="#generateHubUrl">private String generateHubURL()</a></li>
+            <li><a href="#generateCredentials">private String[] getCredentials()</a></li>
+            <li><a href="#getDriver">public WebDriver getDriver()</a></li>
+            <li><a href="#setCapabilities">public void setCapabilities(String enableLocal, String os,String osVersion,
+                    String
+                    browser,
+                    String
+                    browserVersion)
+                </a></li>
+        </ul>
+
+        <div id="runmodebrowserstack"><br>
+            <h3>1. public RunModeBrowserStack(String enableLocal, String os, String osVersion,String browser, String browserVersion)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4> public RunModeBrowserStack(String enableLocal, String os, String osVersion,String browser, String browserVersion)
+                </h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will run with capabilities like OS, OsVersion, browser, browser Version and run URL with help of RemoteWebDriver object if URL is correct it will run well and if not it will give exception.</p>
+                <li><b>Throws:</b></li>
+                <p>IllegalArgumentException</p>
+            </ul>
+        </div>
+        <div id="generateHubUrl"><br>
+            <h3>2. private String generateHubURL()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private String generateHubURL()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will take browser stack credentials and with help of credentials it will generate HubUrl.
+                </p>
+                <li><b>Returns:</b></li>
+                <p>Returns HubUrl</p>
+            </ul>
+        </div>
+        <div id="generateCredentials"><br>
+            <h3>3. private String[ ] getCredentials()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private String[ ] getCredentials()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to get credentials and it will split credentials.</p>
+                <li><b>Throws:</b></li>
+                <p>NullPointerException</p>
+                <li><b>Returns:</b></li>
+                <p>Returns credentials</p>
+            </ul>
+        </div>
+        <div id="getDriver"><br>
+            <h3>4. public WebDriver getDriver()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public WebDriver getDriver()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is to get the driver object from Browser class.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns current driver object</p>
+                <li><b>Usage:</b></li>
+                <p><img src="resources/img/services guides/browserstack/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="setCapabilities"><br>
+            <h3>5. public void setCapabilities(String enableLocal, String os, String osVersion, String browser, String browserVersion)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setCapabilities(String enableLocal, String os, String osVersion, String browser, String browserVersion)
+                </h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to set capabilities OS, OsVersion, browser, browser Version</p>
+                <li><b> Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

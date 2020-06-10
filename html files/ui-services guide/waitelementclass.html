@@ -1,0 +1,386 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>Wait Element Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#HardPause">HardPause(long)(boolean)</a></li>
+            <li><a href="#implicitWait">implicitWait(long)(boolean)</a></li>
+            <li><a href="#pageLoadTimeout">pageLoadTimeout(long)(boolean)</a></li>
+            <li><a href="#safeWait">safeWait(long)(boolean)</a></li>
+            <li><a href="#setScriptTimeout">setScriptTimeout(long)(boolean)</a></li>
+            <li><a href="#waitForBoolean">waitFor(LocatorType , String)(boolean)</a></li>
+
+            <div class="toggle-text" id="toggle-text-2">
+
+                <li><a href="#waitForElementPresenceVoid">waitForElementPresence(LocatorType, String, long)(void)</a></li>
+                <li><a href="#waitForElementPresenceLong">waitForElementPresence(LocatorType, String , long, long)(void)</a>
+                </li>
+                <li><a href="#waitForElementToBeClickableLongVoid">waitForElementToBeClickable(LocatorType, String,
+                    long)(void)</a></li>
+                <li><a href="#waitForElementToBeClickableLocatorType">waitForElementToBeClickable(LocatorType, String, long,
+                    long)(void)</a></li>
+                <li><a href="#waitForElementVisibilityLong">waitForElementVisibility(LocatorType, String, long)(void)</a>
+                </li>
+                <li><a href="#waitForElementVisibilityLongVoid">waitForElementVisibility(LocatorType, String, long,
+                    long)(void)</a></li>
+            </div>
+        </ul>
+        <a class="toggle-text-button" toggle-text="2">Read More</a>
+        <div id="HardPause"><br>
+            <h3>1. Public boolean HardPause(long milliseconds)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>Public boolean HardPause(long milliseconds)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method will stops the next line to execute until given time.</li>
+                    <li>It will compulsory pause the execution for given time.</li>
+                </ul>
+                <li><b>Parameters: </b></li>
+                <p>This method have one parameter:</p>
+                <ul>
+                    <li>Milliseconds: It is long value which is take as a milliseconds(time unit).</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will return true after completing wait time otherwise returns false.</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/waitelement/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="implicitWait"><br>
+            <h3>2. public boolean implicitWait(long seconds)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean implicitWait(long seconds)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method wait until specific element gets found on web page.</li>
+                    <li>Some elements may be not immediately loaded on web page, this wait method helps us to pause the next line execution till element gets available.</li>
+                    <li>This wait method will applied after every statement.</li>
+                </ul>
+                <li><b>Parameters:</b></li>
+                <p>This method having one parameter</p>
+                <ul>
+                    <li>econds- This method take wait time in seconds(time unit).</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true when element gets available otherwise returns false.</p>
+
+                <li><b>Exception:</b></li>
+
+                <p>NullPointerException - If driver is not found.</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/waitelement/Picture2.png"></p>
+            </ul>
+        </div>
+        <div id="pageLoadTimeout"><br>
+            <h3>3. public boolean pageLoadTimeout(long seconds)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean pageLoadTimeout(long seconds)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method sets the time limit to load the page.</li>
+                    <li>If page gets load in given time span then only further scripts gets executed otherwise execution gets stop.</li>
+                </ul>
+                <li><b>Parameters:</b></li><b></b></li>
+                <p>This method having one parameter:</p>
+                <ul>
+                    <li><b>Seconds- This parameter takes long value which is in seconds(time unit).</b></li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if page gets load in given time span otherwise returns false.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                </ul>
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/waitelement/Picture3.png"></p>
+
+            </ul>
+        </div>
+        <div id="safeWait"><br>
+            <h3>4. public boolean safeWait(long milliseconds)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>public boolean safeWait(long milliseconds)</h4>
+
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method just make sure that web page gets load properly and after that next scripts will get execute.
+                    </li>
+                    <li>This method will wait for given time span.</li>
+                </ul>
+                <li><b>Parameters: </b></li>
+                <p>This method having one parameter:</p>
+                <ul>
+                    <li>Milliseconds- It will take the long value as a milliseconds(time unit).</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns true after safe wait completed otherwise returns false.</p>
+            </ul>
+        </div>
+        <div id="setDriverForWait"><br>
+            <h3>5. public void setDriverForWait(WebDriver driver)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setDriverForWait(WebDriver driver)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method accepts reference variable of WebDriver Interface, which will initialize to FirefoxDriver or InternetExplorerDriver or the ChromeDriver class constructor.</li>
+                    <li>This method is use to refer current instance variable.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns nothing.</p>
+            </ul>
+        </div>
+        <div id="setScriptTimeout"><br>
+            <h3>6. public boolean setScriptTimeout(long seconds)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean setScriptTimeout(long seconds)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method sets time to execute test scripts within it.</li>
+                    <li>It can sets the time span to the script so driver can not interrupt the execution of test script.
+                    </li>
+                </ul>
+                <li><b>Parameters: </b></li>
+                <p>This method having one parameter:</p>
+                <ul>
+                    <li>Seconds- This will take long value as a seconds(time unit).</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns true after time completion otherwise returns false.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                </ul>
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/waitelement/Picture4.png"></p>
+            </ul>
+        </div>
+        <div id="waitForBoolean"><br>
+            <h3>7. public boolean waitFor(LocatorType , String)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean waitFor(LocatorType , String)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method is wait until given element gets visible.</li>
+                    <li>Some times web elements are not available immediately , so need to wait until element gets available.
+                    </li>
+                </ul>
+                <li><b>Parameters: </b></li>
+                <p>This method having two parameters:</p>
+                <ul>
+                    <li>LocatorType- This is the identifier of element.</li>
+                    <li>Value- This is the value for locator.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns true when element gets available otherwise returns false.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                    <li>NoSuchElementException- If given element is not present.</li>
+                </ul>
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/waitelement/Picture5.png"></p>
+            </ul>
+        </div>
+        <div id="waitForElementPresenceVoid"><br>
+            <h3>8. public void waitForElementPresence(LocatorType locator, String value, long timeOutInSeconds)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>public void waitForElementPresence(LocatorType locator, String value, long timeOutInSeconds)</h4>
+
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>It will wait until given element gets available on page.</li>
+                    <li>We can provide time span to load that web element.</li>
+                </ul>
+                <li><b>Parameters:</b></li> This method having three parameters:
+                <ul>
+                    <li>locatorType- It is identifier of element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>timeOutInSeconds- It is time span in seconds(time unit)</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true when element gets available in give time span otherwise returns false.</p>
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="waitForElementPresenceLong"><br>
+            <h3>9. public void waitForElementPresence(LocatorType locator, String value, long timeOutInSeconds, long pollingInSeconds)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>public void waitForElementPresence(LocatorType locator, String value, long timeOutInSeconds, long pollingInSeconds)
+                </h4>
+
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>It will wait until given web element gets available on page.</li>
+                    <li>It added polling facility, which checks the availability of element after every few seconds which we provided.
+                    </li>
+                </ul>
+                <li><b>Parameters:</b></li>
+                <p>This method having four parameters:</p>
+                <ul>
+                    <li>Locator- It is the identifier of element.</li>
+                    <li>Value - It is value for locator.</li>
+                    <li>timeOutInseconds- It is the total time to load the web element.</li>
+                    <li>pollingInseconds- It is time interval, after that interval it will check for element availability.
+                    </li>
+                </ul>
+
+                <li><b>Returns:</b></li>
+                <p>It returns nothing.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                    <li>NoSuchElementException- If given element is not present.</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="waitForElementToBeClickableLongVoid"><br>
+            <h3>10. public void waitForElementToBeClickable(LocatorType locator, String Value, long timeOutInSeconds)
+            </h3>
+            <ul>
+                <li><b>Method Name:
+                    </b></li>
+                <h4>public void waitForElementToBeClickable(LocatorType locator, String Value, long timeOutInSeconds)
+                </h4>
+
+                <li><b>Purpose:</b></li>
+                <p>It will wait until given element gets available for clicking purpose (buttons, links, clickable images).
+                </p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier of element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>timeOutInSeconds- It is wait time in seconds.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will return nothing.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="waitForElementToBeClickableLocatorType"><br>
+            <h3>11. public void waitForElementToBeClickable(LocatorType, String, long, long)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void waitForElementToBeClickable(LocatorType, String, long, long)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>It will wait untile given element is available on page for clicking purpose(buttons, links, clickable images).
+                    </li>
+                    <li>This method also provide time to check availability of element at every interval time.</li>
+                </ul>
+                <li><b>Parameters:</b></li>
+                <p>This method having four parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier of element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>TimeOutInSeconds- It is total wait time.</li>
+                    <li>pollingInSeconds- It is interval time to check the availability of element.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will return nothing.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                    <li>NoSuchElementException- If given element is not present.</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="waitForElementVisibilityLong"><br>
+            <h3>12. public void waitForElementVisibility(LocatorType, String, long)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void waitForElementVisibility(LocatorType, String, long)</h4>
+
+                <li><b>Purpose:</b></li>
+                <p>It will wait until element gets visible on screen(images, links).</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier of element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>TimeOutInSeconds- It is total wait time to get page load.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns nothing.</p>
+
+                Exception:
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="waitForElementVisibilityLongVoid"><br>
+            <h3>13. public void waitForElementVisibility(LocatorType, String, long, long)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void waitForElementVisibility(LocatorType, String, long, long)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>It will wait until element gets visible on screen(images, links).</li>
+                    <li>This method provides one more time interval to check element visibility at every interval.</li>
+                </ul>
+                <li><b>Parameters:</b></li>
+                <p>This method having four parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier of element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>timeOutInSeconds- It is total time to load the page in seconds.</li>
+                    <li>pollingInseconds- It is interval time to check visibility of element after interval time.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will return nothing.</p>
+
+                <li><b>Exception:</b></li>
+                <ul>
+                    <li>TimeoutException- If element is not found in given time.</li>
+                    <li>NullPointerException - If driver is not found.</li>
+                    <li>NoSuchElementException- If given element is not present.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

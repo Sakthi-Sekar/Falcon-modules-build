@@ -1,0 +1,212 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>Verify Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#verifyIsDisplayed">verifyIsDisplayed(LocatorType, Boolean, String )(boolean )</a></li>
+            <li><a href="#verifyIsEnabled">verifyIsEnabled(LocatorType, String, Boolean, String)(boolean )</a></li>
+            <li><a href="#verifyIsSelected">verifyIsSelected(LocatorType, String, Boolean, String)(boolean )</a></li>
+            <li><a href="#verifyPageTitle">verifyPageTitle(String, String, String)(boolean )</a></li>
+            <li><a href="#verifyPageUrl">verifyPageUrl(String, String, String)(boolean )</a></li>
+            <li><a href="#verifyText">verifyText(LocatorType, String, String, String)(boolean )</a></li>
+            <li><a href="#setFindIfind">setFind(IFind)(void)</a></li>
+            <li><a href="#getElement">getElement(LocatorType, String)(WebElement)</a></li>
+        </ul>
+        <div id="verifyIsDisplayed"><br>
+            <h3>1. verifyIsDisplayed(LocatorType locator, Boolean expected, String errorMessage)</h3>
+            <ul class="count">
+                <li><b>Method Name:</b></li>
+                <h4>verifyIsDisplayed(LocatorType locator, Boolean expected, String errorMessage)</h4>
+                <li>
+                    <p> Purpose:</p>
+                </li>
+                <p>This method capable to check all kind of elements are present or not.</p>
+
+                <li><b>Parameters: </b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Loactor- It is identifier of element.</li>
+                    <li>Expected- Expected boolean value after execution.</li>
+                    <li>errorMessage- If expected boolean value is not returns then string for error message.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if element displayed otherwise false.</p>
+
+                <li><b>Throws :</b></li>
+                <p>illegalArgumentException</p>
+            </ul>
+        </div>
+        <div id="verifyIsEnabled"><br>
+            <h3>2. public boolean verifyIsEnabled(LocatorType locator, String value, Boolean expected, String errorMessage)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>public boolean verifyIsEnabled(LocatorType locator, String value, Boolean expected, String errorMessage)
+                </h4>
+
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method used to verify if web element is enabled or not within the web page.</li>
+                    <li>It is primarily used with buttons.</li>
+                </ul>
+                <li><b>Parameters:</b></li>
+                <p>This method having four parameters</p>
+                <ul>
+                    <li>Locator- It is identifier of web element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>Expected- It is expected boolean value after execution.</li>
+                    <li>errorMessage- If unexpected result arrive then string error message.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if element is enabled otherwise returns false.</p>
+
+                <li><b>Throws :</b></li>
+                <p>illegalArgumentException</p>
+
+            </ul>
+        </div>
+        <div id="verifyIsSelected"><br>
+            <h3>3. public boolean verifyIsSelected(LocatorType locator, String value, Boolean expected, String errorMessage)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>public boolean verifyIsSelected(LocatorType locator, String value, Boolean expected, String errorMessage)
+                </h4>
+
+                <li><b>Purpose:</b></li>
+                <p>This method is used to verify if web element is selected or not.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having four parameters</p>
+                <ul>
+                    <li>Locator- It is identifier of web element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>Expected- It is expected boolean value after execution.</li>
+                    <li>errorMessage- If unexpected result arrive then string error message.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if web element is selected otherwise returns false.</p>
+
+                <li>
+                    <p>Throws : </p>
+                </li>
+                <p>illegalArgumentException</p>
+            </ul>
+        </div>
+        <div id="verifyPageTitle"><br>
+            <h3>4. public boolean verifyPageTitle(String actual , String expected, String errorMessage)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean verifyPageTitle(String actual , String expected, String errorMessage)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method used to verify current page title.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Actual- It is actual web page title.</li>
+                    <li>Expected- It is what page title we expects.</li>
+                    <li>errorMessage- If actual and expected don’t match then error message prints.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if actual and expected title is similar otherwise returns false.</p>
+
+                <li><b>Throws :</b></li>
+                <p>illegalArgumentException</p>
+            </ul>
+        </div>
+        <div id="verifyPageUrl"><br>
+            <h3>5. public boolean verifyPageUrl(String actual, String expected, String errorMessage)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean verifyPageUrl(String actual, String expected, String errorMessage)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method used to verify current URL of web page.</p>
+
+                <li><b>Parameters: </b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Actual- It is actual web page URL.</li>
+                    <li>Expected- It is what page URL we expects.</li>
+                    <li>errorMessage- If actual and expected don’t match then error message prints.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if actual and expected gets match otherwise returns false.</p>
+
+                <li><b>Throws :</b></li>
+                <p>illegalArgumentException</p>
+
+            </ul>
+        </div>
+        <div id="verifyText"><br>
+            <h3>6. public boolean verifyText(LocatorType loactor, String value, String expected, String errorMessage)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>public boolean verifyText(LocatorType loactor, String value, String expected, String errorMessage)
+                </h4>
+
+                <li><b>Purpose:</b></li>
+                <li>This method used to verify text of web element.</li>
+
+                <li><b>Parameters: </b></li>
+                <p>This method having four parameters</p>
+                <ul>
+                    <li>Locator- It is identifier of web element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>Expected- It is expected text value after execution.</li>
+                    <li>errorMessage- If unexpected result arrive then string error message.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns true if expected text found in web element otherwise returns false.</p>
+
+                <li><b>Throws :</b></li>
+                <p>illegalArgumentException</p>
+
+            </ul>
+        </div>
+        <div id="setFindIfind"><br>
+            <h3>7. Public void setFind(IFind)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>Public void setFind(IFind)</h4>
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method accepts the reference variable of IFind interface.</li>
+                    <li>This method is use to refer instance variable.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns Nothing.</p>
+
+            </ul>
+        </div>
+        <div id="getElement"><br>
+            <h3>8. Private WebElement getElement(LocatorType locator, String value)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>Private WebElement getElement(LocatorType locator, String value)</h4>
+                <li><b>Purpose:</b></li>
+                <p>It is private method use to get the web element by using locator.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having two parameters:</p>
+                <ul>
+                    <li>Locator- It is Identifier of web element.</li>
+                    <li>Value- It is the value for locator.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns current reference variable of WebElement Interface.</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

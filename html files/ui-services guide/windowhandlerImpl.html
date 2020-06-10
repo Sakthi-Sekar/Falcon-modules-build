@@ -1,0 +1,169 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="full-content">
+        <h2>Window Handler Impl Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#closeAllOtherWindows">public boolean closeAllOtherWindows(String
+                    openWindowHandle)</a></li>
+            <li><a href="#closeWindow">public boolean closeWindow(String windowNameOrHandle)</a></li>
+            <li><a href="#getMainWindowHandle">public String getMainWindowHandle()</a></li>
+
+
+
+            <li><a href="#getWindowHandles">public Set &lt;String&gt; getWindowHandles()</a></li>
+            <li><a href="#getWindowTitle">public String getWindowTitle(String
+                    windowNameOrHandle)</a></li>
+
+
+            <div class="toggle-text" id="toggle-text-3">
+
+
+                <li><a href="#FrameHandler">public WindowHandler.FrameHandler handleFrame()</a></li>
+
+
+                <li><a href="#PopUpHandler">public WindowHandler.PopUpHandler handlePopup()</a></li>
+                <li><a href="#browserType">public void setDriver(BrowserType browserType)</a></li>
+                <li><a href="#switchToWindow">public boolean switchToWindow(String
+                    windowNameOrHandle)</a></li>
+                <li><a href="#waitForNewWindowAndSwitchToIt">public boolean waitForNewWindowAndSwitchToIt(int
+                noOfSecsToWait)</a></li>
+
+
+
+            </div>
+
+        </ul>
+        <a class="toggle-text-button" toggle-text="3">Read More</a>
+
+        <div id="closeAllOtherWindows"><br>
+            <h3>1. public boolean closeAllOtherWindows(String openWindowHandle)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean closeAllOtherWindows(String openWindowHandle)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will close all other Windows other than open window</p>
+                <li><b>Throws:</b></li>
+                <p>NoSuchWindowException</p>
+                <li><b>Returns:</b></li>
+                <p>Returns true or false for all windows operations</p>
+                <li><b>Usage:</b></li>
+                <p><img src="resources/img/services guides/windowhandlerImpl/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="closeWindow"><br>
+            <h3>2. public boolean closeWindow(String windowNameOrHandle)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean closeWindow(String windowNameOrHandle)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will close Window with given name</p>
+                <li><b>Throws:</b></li>
+                <p>NoSuchWindowException</p>
+                <li><b>Returns:</b></li>
+                <p>Returns true or false for close Window operations</p>
+                <li><b>Usage:</b></li>
+                <p><img src="resources/img/services guides/windowhandlerImpl/Picture2.png"></p>
+            </ul>
+        </div>
+        <div id="getMainWindowHandle"><br>
+            <h3>3. public String getMainWindowHandle()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public String getMainWindowHandle()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to Get Main window title</p>
+                <li><b>Returns:</b></li>
+                <p>Returns object of getMainWindowHandler</p>
+            </ul>
+        </div>
+        <div id="getWindowHandles"><br>
+            <h3>4. public Set &lt;String&gt; getWindowHandles()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public Set &lt;String&gt; getWindowHandles()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to Get list of Main window title</p>
+                <li><b>Returns:</b></li>
+                <p>Returns list of getMainWindowHandler</p>
+            </ul>
+        </div>
+        <div id="getWindowTitle"><br>
+            <h3>5. public String getWindowTitle(String windowNameOrHandle)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public String getWindowTitle(String windowNameOrHandle)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to Get Title for given window name.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns title</p>
+            </ul>
+        </div>
+        <div id="FrameHandler"><br>
+            <h3>6. public WindowHandler.FrameHandler handleFrame()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public WindowHandler.FrameHandler handleFrame()</h4>
+                <li>
+                    <p><b>Purpose:</b></p>
+                </li>
+                <p>This method is used to Get object of FrameHandler Interface.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns FrameHandler object</p>
+            </ul>
+        </div>
+        <div id="PopUpHandler"><br>
+            <h3>7. public WindowHandler.PopUpHandler handlePopup()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public WindowHandler.PopUpHandler handlePopup()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to Get object of PopUpHandlerHandler Interface.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns PopUpHandlerHandler object.</p>
+            </ul>
+        </div>
+        <div id="browserType"><br>
+            <h3>8. public void setDriver(BrowserType browserType)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setDriver(BrowserType browserType)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will set the path for driver.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to set Driver.</p>
+            </ul>
+        </div>
+        <div id="switchToWindow"><br>
+            <h3>9. public boolean switchToWindow(String windowNameOrHandle)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean switchToWindow(String windowNameOrHandle)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will switches to window with given window name.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns true or false for switch window operations</p>
+            </ul>
+        </div>
+        <div id="waitForNewWindowAndSwitchToIt"><br>
+            <h3>10. public boolean waitForNewWindowAndSwitchToIt(int noOfSecsToWait)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public boolean waitForNewWindowAndSwitchToIt(int noOfSecsToWait)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will Waits for new window for the given time in seconds and then switches to it.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns true or false for new window and switch operations</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

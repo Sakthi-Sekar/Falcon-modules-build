@@ -1,0 +1,136 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>CustomListener</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#afterinvocation">public void afterInvocation(IInvokedMethod method, ITestResult result)</a>
+            </li>
+            <li><a href="#beforeinvocation">public void beforeInvocation(IInvokedMethod method,
+                    ITestResult result)</a></li>
+            <li><a href="#capturescrshot">private void captureScreenShot(ITestResult result)</a></li>
+            <li><a href="#jirabug">private void createJIRABug(ITestResult result)</a></li>
+            <li><a href="#exefinish">public void onExecutionFinish()</a></li>
+            <li><a href="#exestart">public void onExecutionStart()</a></li>
+            <li><a href="#onstart">public void onStart(ITestContext context)</a></li>
+            <li><a href="#ontestfailure">public void onTestFailure(ITestResult result)</a></li>
+            <li><a href="#uploadimg">private void uploadImage(File file)</a></li>
+        </ul>
+        <div id="afterinvocation"><br>
+            <h3>1. public void afterInvocation(IInvokedMethod method, ITestResult result)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void afterInvocation(IInvokedMethod method, ITestResult result)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method invoke after configuration method(@before and @after).It will check invoked method is configuration method or not if not then it will create a failure message with all failures and stack trace if it is configuration method
+                    then it will check assertion failure and verification failure.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to check status of Configuration method.</p>
+            </ul>
+        </div>
+        <div id="beforeinvocation"><br>
+            <h3>2. public void beforeInvocation(IInvokedMethod method, ITestResult result)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void beforeInvocation(IInvokedMethod method, ITestResult result)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method invoke before configuration method (@before and @after). It will check invoked method is configuration method or not if not then it will create a failure message with all failures and stack trace if it is configuration method
+                    then it will check assertion failure and verification failure.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to check status of Configuration method.</p>
+            </ul>
+        </div>
+        <div id="capturescrshot"><br>
+            <h3>3. private void captureScreenShot(ITestResult result)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4> private void captureScreenShot(ITestResult result)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to take the screenshot whenever the test script is fail.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p><img src="resources/img/services guides/customlistenerclass/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="jirabug"><br>
+            <h3>4. private void createJIRABug(ITestResult result)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private void createJIRABug(ITestResult result)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will create JIRA bug after failure.If you want to create JIRA Bug. Please set value of key 'automatic.bug.creation' to 'true' in config.properties file otherwise it will not create JIRA bug.
+                </p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to JIRA bug.</p>
+            </ul>
+        </div>
+        <div id="exefinish"><br>
+            <h3>5. public void onExecutionFinish()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void onExecutionFinish()</h4>
+                <li><b>Purpose:</b></li>
+                <p>After finishing execution of Script if you want to execute some code then this listener is used.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+        <div id="exestart"><br>
+            <h3>6. public void onExecutionStart()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void onExecutionStart()</h4>
+                <li><b>Purpose:</b></li>
+                <p>After starting execution of Script if you want to execute some code then this listener is used.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+        <div id="onstart"><br>
+            <h3>7. public void onStart(ITestContext context)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void onStart(ITestContext context)</h4>
+                <li><b>Purpose:</b></li>
+                <p>It is used to get Suit name</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+        <div id="ontestfailure"><br>
+            <h3>8. public void onTestFailure(ITestResult result)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void onTestFailure(ITestResult result)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will captures Screen shot on Failure and also create JIRA bug.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+        <div id="uploadimg"><br>
+            <h3>9. private void uploadImage(File file)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private void uploadImage(File file)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will upload captures Screen shot on Failure and also create JIRA bug.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

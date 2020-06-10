@@ -1,0 +1,214 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>Web Table Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#columnCount">columnCount(LocatorType,String) (int)</a></li>
+            <li><a href="#dataFromColumnByIndex">dataFromColumnByIndex(LocatorType, String, int) (List
+                    &lt;String&gt;)</a></li>
+            <li><a href="#dataFromRow">dataFromRow(LocatorType, String, int) (List &lt;String&gt;)</a></li>
+            <li><a href="#dataFromTable">dataFromTable(LocatorType, string) (List &lt;Object&gt;)</a></li>
+            <li><a href="#dataFromTableCell">dataFromTableCell(LocatorType,String, int,int) (String)</a></li>
+            <li><a href="#rowCount">rowCount(LocatorType, String) (int)</a></li>
+            <li><a href="#setDriverForWebTable">setDriverForWebTable(WebDriver) (void)</a></li>
+            <li><a href="#setFinderIfindVoid">setFinder(IFind) (void)</a></li>
+            <li><a href="#tableElementFinder">tableElementFinder(LocatorType, String) (WebElement)</a></li>
+        </ul>
+        <div id="columnCount"><br>
+            <h3>1. Public int columnCount(LocatorType,String)</h3>
+            <ul>
+                <li><b>Method Name</b></li>
+                <h4>Public int columnCount(LocatorType,String)</h4>
+                <li><b>Purpose:</b></li>
+                <p>It will give us count of columns present in web page.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having two parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier of web element.</li>
+                    <li>Value- It is value for locator.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns count of columns.</p>
+                <li><b>Exceptions:</b></li>
+                <p>noSuchElementException</p>
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/webtable/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="dataFromColumnByIndex"><br>
+            <h3>2. Public List
+                <String> dataFromColumnByIndex(LocatorType, String, int)</h3>
+            <ul>
+                <li><b>Method Name</b></li>
+
+                <h4>Public List
+                    <String> dataFromColumnByIndex(LocatorType, String, int)</h4>
+
+                <li><b>Purpose:</b></li>
+                <p>This method gives us list of values inside column, which is base on there index.</p>
+
+                <li><b>Parameters: </b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier for web element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>Index- It is index of column data.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns list of data included in column.</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/webtable/Picture2.png"></p>
+            </ul>
+        </div>
+        <div id="dataFromRow"><br>
+            <h3>3. Public List &lt;String&gt; dataFromRow(LocatorType, String, int)</h3>
+            <ul>
+                <li><b>Method Name</b></li>
+                <h4>Public List &lt;String&gt; dataFromRow(LocatorType, String, int)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method gives us list of data included in row.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having three parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier for web element.</li>
+                    <li>Value- It is value for locator.</li>
+                    <li>Index- It is index number of row.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns list of data included in row.</p>
+                <li><b>Exceptions:</b></li>
+                <p>NoSuchElementException</p>
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/webtable/Picture3.png"></p>
+            </ul>
+        </div>
+        <div id="dataFromTable"><br>
+            <h3>4. Public List &lt;Object&gt; dataFromTable(LocatorType, string)</h3>
+            <ul>
+                <li><b>Method Name</b></li>
+                <h4>Public List Object dataFromTable(LocatorType, string)</h4>
+                <li><b>Purpose:</b></li>
+                <p>It will give us list of data included in table.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having two parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier for web element.</li>
+                    <li>Value- It is value for locator.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns list of data included in table.</p>
+
+                <li><b>Exceptions: </b></li>
+                <p>noSuchElementException</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/webtable/Picture4.png"></p>
+            </ul>
+        </div>
+        <div id="dataFromTableCell"><br>
+            <h3>5. Public String dataFromTableCell(LocatorType,String, int,int)</h3>
+            <ul>
+                <li><b>Method Name</b></li>
+                <h4>Public String dataFromTableCell(LocatorType,String, int,int)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method gives us specific cell in table.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This parameter having four parameters:</p>
+                <ul>
+                    <li>Locator- It is Identifier of web element.</li>
+                    <li>Element- It is value for locator.</li>
+                    <li>rowIndex- It is index of row.</li>
+                    <li>columnIndex- It is index of column.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns that value which in present at given row index and column index.</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/webtable/Picture5.png"></p>
+            </ul>
+        </div>
+        <div id="rowCount"><br>
+            <h3>6. Public int rowCount(LocatorType, String)</h3>
+            <ul>
+                <li><b>Method Name</b></li>
+                <h4>Public int rowCount(LocatorType, String)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method provides count of row.</p>
+
+                <li><b>Parameters:</b></li>
+                <p>This method having two parameters:</p>
+                <ul>
+                    <li>Locator- It is identifier of web element.</li>
+                    <li>element- It is value for locator.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It returns number of row count. Exceptions: noSuchElementException</p>
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/webtable/Picture6.png"></p>
+            </ul>
+        </div>
+        <div id="setDriverForWebTable"><br>
+            <h3>7. Public void setDriverForWebTable(WebDriver)</h3>
+            <ul>
+                <h4>Method Name</h4>
+                Public void setDriverForWebTable(WebDriver)
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>This method accepts reference variable of WebDriver Interface, which will initialize to FirefoxDriver or InternetExplorerDriver or the ChromeDriver class constructor.</li>
+                    <li>This method is use to refer current instance variable.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns nothing.</p>
+
+
+            </ul>
+            <div id="setFinderIfindVoid"><br>
+                <h2>8. Public void setFinder(IFind)</h2>
+
+                <ul>
+                    <li><b>Method Name</b></li>
+                    <h4>Public void setFinder(IFind)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>This method accepts the reference variable of IFind interface.</li>
+                        <li>This method is use to refer instance variable.</li>
+                    </ul>
+                    <li><b>Returns:</b></li>
+                    <p>It will returns Nothing.</p>
+                </ul>
+            </div>
+            <div id="tableElementFinder"><br>
+                <h2>9. Private WebElement tableElementFinder(LocatorType, String)</h2>
+
+                <ul>
+                    <li><b>Method Name</b></li>
+                    <h4>Private WebElement tableElementFinder(LocatorType, String)</h4>
+                    <li><b>Purpose:</b></li>
+
+                    <p>This method finds the elements into the table.</p>
+
+                    <li><b>Parameters:</b></li>
+                    <p>This method having two parameters:</p>
+                    <ul>
+                        <li>Locator- It is identifier of web element.</li>
+                        <li>Element- It is value for locator.</li>
+                    </ul>
+                    <li><b>Returns:</b></li>
+                    <p>It returns reference variable of WebElement interface.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

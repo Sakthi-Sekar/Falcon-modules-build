@@ -1,0 +1,524 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="full-content">
+        <h2>Browser Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+
+        <ul class="count">
+            <li> <a href="#captureScreenshot">public boolean CaptureScreenshot()</a></li>
+            <li><a href="#clearAllCookies">public boolean ClearAllCookies()</a></li>
+            <li><a href="#clearCookiesByName">public boolean clearCookiesByName(String cookieName)</a></li>
+            <li><a href="#closeBrowser">public boolean closeBrowser()</a></li>
+            <li><a href="#getCheckBox">public CheckBox getCheckBox()</a></li>
+            <li><a href="#getClick">public Click getClick()</a></li>
+            <li><a href="#getCurrentPageTitle">public String getCurrentPageTitle()</a></li>
+            <li><a href="#getCurrentURL">public String getCurrentURL()</a>
+                <li><a href="#getDriver">WebDriver getDriver()</a></li>
+
+                <!--Read more button-->
+                <span id="dots"><b style="color: black;">...</b></span>
+                <span id="more">
+
+                <li><a href="#getFindFromBrowser">public Find getFindFromBrowser()</a></li>
+                <li><a href="#getKey">public key getKey()</a></li>
+                <li><a href="#getLoadedPageSource">public String getLoadedPageSource()</a></li>
+                <li><a href="#getMouse">public mouseMove getMouse()</a><br></li>
+                <li><a href="#getNavigate">public Navigate getNavigate()</a></li>
+                <li><a href="#getPageHelper">public pageHelper getPageHelper()</a></li>
+                <li><a href="#getPageScroll">public Scroll getPageScroll()</a></li>
+                <li><a href="#getTable">public webTable getTable()</a></li>
+                <li><a href="#getTextField">public TextField getTextField()</a></li>
+                <li><a href="#getWait">public waitElement getWait()</a><br></li>
+                <li><a href="#getWindowHandler">public WindowHandler getWindowHandler</a></li>
+                <li><a href="#maximizeWindow">public boolean maximizeWindow()</a></li>
+                <li><a href="#openPage">public boolean openPage(String url,BrowserType browserType)</a></li>
+                <li><a href="#openPage_profileName">public boolean openPage(String url,BrowserType browserType,String
+                    profileName)</a></li>
+                <li><a href="#openPageCommons">public void openPageCommons(String url)</a></li>
+                <li><a href="#openUrl">public boolean openUrl(String url,String os,String osVesion,String
+                    browser,String
+                    browserVersion</a></li>
+                <li><a href="#openUrl_capabilities">public boolean openURL(String url,String os,String
+                    osVersion,String
+                    browser,String
+                    browserVersion,DesiredCapabilities capabilities)</a></li>
+                <li> <a href="#quitBrowser">public boolean quitBrowser()</a></li>
+                <li><a href="#refreshBrowser">public boolean refreshBrowser()</a></li>
+                <li><a href="#setupDriverForRequiredClasses">private void setupDriverForRequiredClasses()</a></li>
+                <li> <a href="#setupDriverForRequiredClassesForParallel">setupDriverForRequiredClassesForParallel</a>
+                </li>
+                <li><a href="#uploadImage">private boolean uploadImage</a></li>
+                <li><a href="#validateURL">private boolean validateURL(String url)</a></li>
+        </ul>
+        </span>
+                <!--Read more and Read less button-->
+                <button onclick=" readMoreLess()" id="Btn">Read more</button>
+
+
+                <div id="captureScreenshot"><br>
+                    <h3>1. public boolean captureScreenshot()</h3>
+                    <ul>
+                        <li> <b>Method Name: </b></li>
+                        <h4> public boolean captureScreenshot() </h4>
+                        <li> <b>Purpose:</b> </li>
+                        <p> This method will take Screenshot of browser.This method is used to upload screenshot of the web site to the report server whenever the test method is failed. </p>
+                        <li> <b> Returns:</b></li>
+                        <p>Returns True if Successful or returns False </p>
+                        <li> <b> Usage:</b></li>
+                        <p><img src="resources/img/services guides/browserclass/Picture1.png"></p>
+                        <!-- <h3 style="color:#168fae !important;">browser<b style="color: black;">.captureScreenshot();</b>
+            </h3> -->
+                    </ul>
+
+                </div>
+
+
+                <div id="clearAllCookies"><br>
+                    <h3>2. public boolean clearAllCookies()</h3>
+                    <ul>
+                        <li><b>Method Name: </b></li>
+                        <h4>public boolean clearAllCookies()</h4>
+                        <li><b>Purpose: </b></li>
+                        <p>This method will clear all browser Cookies.</p>
+                        <li><b>Returns:</b></li>
+                        <p>Returns True if Successful or returns False</p>
+                        <li><b>Usage:</b></li>
+                        <p><img src="resources/img/services guides/browserclass/Picture2.png"></p>
+                    </ul>
+
+                </div>
+                <div id="clearCookiesByName"><br>
+                    <h3>3. public boolean clearCookieByName(String cookieName)</h3>
+                    <ul>
+
+                        <li><b>Method Name: </b></li>
+                        <h4>public boolean clearCookieByName(String cookieName)</h4>
+                        <li><b>Purpose:</b></li>
+                        <p>This method will clear browser Cookies as per cookies name provided to this method.</p>
+                        <li><b>Returns:</b></li>
+                        <p>Returns True if Successful or returns False</p>
+                        <li><b>Throws:</b></li>
+                        <p>NullPointerException</p>
+                        <li><b>Usage:</b></li>
+                        <p>I have a cookie with name “COOKIE_NAME” Go to settings -->(left side ) settings-->Advance -->Privacy and Security-->Content Setting-->Cookies</p>
+                        <p><img src="resources/img/services guides/browserclass/Picture3.png"></p>
+            </li>
+            </ul>
+            </div>
+            <div id="closeBrowser"><br>
+                <h3>4. public boolean closeBrowser() </h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean closeBrowser()</h4>
+                    <li><b>Purpose:</b></li>
+                    <p>This method will close the browser.</p>
+                    <li><b>Returns:</b></li>
+                    <p>Returns True if Successful or returns False</p>
+                    <li><b>Throws: </b></li>
+                    <p>NullPointerException</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture4.png"></p>
+                </ul>
+            </div>
+            <div id="getCheckBox"><br>
+                <h3>5. public CheckBox getCheckBox()</h3>
+                <ul>
+
+                    <li><b>Method Name: </b></li>
+                    <h4> public CheckBox getCheckBox()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the CheckBox class object from Browser class.This class is used to select checkbox By CssSelector, Id, Value.It is also used to check checkbox is selected or not.</p>
+                    <li><b> Returns: </b></li>
+                    <p>Returns CheckBox Object.</p>
+                    <li><b>Usages:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture5.png"></p>
+                </ul>
+            </div>
+            <div id="getClick"><br>
+                <h3>6.public Click getClick()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public Click getClick()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the Click class object from Browser class.Also Click class is used to click button by name, image by xpath, double click on element by xpath and by id, right click on element by xpath.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns Click Object.</p>
+                    <li><b>Usages: </b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture6.png"></p>
+                </ul>
+            </div>
+            <div id="getCurrentPageTitle"><br>
+                <h3>7.public String getCurrentPageTitle()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>String getCurrentPageTitle()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will get the title of currently opened page</p>
+                    <li><b>Throws:</b></li>
+                    <p>NullPointerException.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns Title of page if found if not then Throws Exception.
+                    </p>
+                    <li><b>Usage: </b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture7.png"></p>
+                </ul>
+            </div>
+            <div id="getCurrentURL"><br>
+                <h3>8.public String getCurrentURL()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public String getCurrentURL()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will get the currently opened page URL.
+                    </p>
+                    <li><b>Throws: </b></li>
+                    <p>NullPointerException.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns Title of page if found if not then Throws Exception.
+                    </p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture8.png"></p>
+                </ul>
+            </div>
+            <div id="getDriver"><br>
+                <h3>9.public WebDriver getDriver()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public WebDriver getDriver().</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the driver object from Browser class.</p>
+                    <li><b>Returns:</b></li>
+                    <p> Returns current driver object</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture9.png"></p>
+                </ul>
+            </div>
+            <div id="getFindFromBrowser"><br>
+                <h3>10.public Find getFindFromBrowser() </h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public Find getFindFromBrowser()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the Find class object from Browser class.</p>
+                    <li><b>Returns:</b></li>
+                    <p>Returns find object</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture10.png"></p>
+                </ul>
+            </div>
+            <div id="getKey"><br>
+                <h3>11.public Key getKey()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public Key getKey()</h4>
+                    <li><b>Purpose:</b></li>
+                    <p>Method is to get the Tab class object from Browser class</p>
+                    <li><b>Returns:</b></li>
+                    <p>Returns key object</p>
+                    <li><b>Usage: </b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture11.png"></p>
+                </ul>
+            </div>
+            <div id="getLoadedPageSource"><br>
+                <h3>12.public String getLoadedPageSource()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>String getLoadedPageSource()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will Load page source.</p>
+                    <li><b>Throws:</b></li>
+                    <p>NullPointerException.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns current page loaded source if found if not then Throws Exception.
+                    </p>
+                    <li><b>Usage: </b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture12.png"></p>
+                </ul>
+            </div>
+            <div id="getMouse"><br>
+                <h3>13.public MouseMove getMouse()</h3>
+                <ul>
+                    <li><b>Method Name: </b>
+                        <h4>public MouseMove getMouse()</h4>
+                        <li><b>Purpose: </b></li>
+                        <p>This method is to get the MouseMove class object from Browser class</p>
+                        <li><b>Throws:</b></li>
+                        <p>NullPointerException</p>
+                        <li><b>Returns:</b></li>
+                        <p>Returns mouseMove object</p>
+                        <li><b>Usage:</b></li>
+                        <p><img src="resources/img/services guides/browserclass/Picture13.png"></p>
+                </ul>
+            </div>
+            <div id="getNavigate"><br>
+                <h3>14.public Navigate getNavigate()</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <p>public Navigate getNavigate()</p>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the Navigate class object \n from Browser class</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns navigate object</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture14.png"></p>
+                </ul>
+            </div>
+            <div id="getPageHelper"><br>
+                <h3>15. public PageHelper getPageHelper()</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public PageHelper getPageHelper()</h4>
+                    <li><b>Purpose:</b></li>
+                    <p>This method is to get the PageHelper class object from Browser class. PageHelper class provides utilities for a web page such as getElementsAttributeList(Returns list of WebElements Attribute by given 'By' instance).</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns pageHelper object</p>
+                </ul>
+            </div>
+            <div id="getPageScroll"><br>
+                <h3>16. public Scroll getPageScroll()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <p>public Scroll getPageScroll()</p>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the Scroll class object from Browser class.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Scroll object</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture15.png"></p>
+                </ul>
+            </div>
+            <div id="getTable"><br>
+                <h3>17. public WebTable getTable()</h3>
+                <ul>
+                    <li><b> Method Name: </b></li>
+                    <h4>public WebTable getTable()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the table class object from Browser class and set the find object.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns webTable object</p>
+                    <li><b>Usage: </b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture16.png"></p>
+                </ul>
+            </div>
+            <div id="getTextField"><br>
+                <h3>18. public TextField getTextField()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public TextField getTextField()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the TextField class object from Browser class and set the find object.</p>
+                    <li><b>Returns: </b></li><b></b></li>Returns textfield object
+                    <li><b> Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture17.png"></p>
+                </ul>
+            </div>
+            <div id="getWait"><br>
+                <h3>19. public WaitElement getWait()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <p>public WaitElement getWait()</p>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the WaitElement class object from Browser class and set the find object.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns waitElement object</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture18.png"></p>
+                </ul>
+            </div>
+            <div id="getWindowHandler"><br>
+                <h3>20. public WindowHandler getWindowHandler()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <p>public WindowHandler getWindowHandler()</p>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is to get the WindowHandler class object from Browser class and set the find object.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns WindowHandler object
+                    </p>
+                    <li><b> Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture19.png"></p>
+                </ul>
+            </div>
+            <div id="maximizeWindow"><br>
+                <h3>21. public boolean maximizeWindow()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean maximizeWindow()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will maximize your browser.
+                    </p>
+                    <li><b>Throws:</b></li>
+                    <p>NullPointerException</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns true if Successful or Returns false Usage:</p>
+                    <p><img src="resources/img/services guides/browserclass/Picture20.png"></p>
+                </ul>
+            </div>
+            <div id="openPage"><br>
+                <h3>22. public boolean openPage(String url, BrowserType browserType)</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean openPage(String url, BrowserType browserType)</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will Open the web page with Required Parameters</p>
+                    <li><b>Throws:</b></li>
+                    NullPointerException
+                    <li><b>Returns: </b></li>
+                    <p>Returns true if Successful or Returns false</p>
+                    <li><b> Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture21.png"></p>
+                </ul>
+            </div>
+            <div id="openPage_profileName"><br>
+                <h3>23. public boolean openPage(String url, BrowserType browserType, String profileName)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean openPage(String url, BrowserType browserType, String profileName)
+                    </h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will Open the web page with Profile. It supports FIREFOX browser only.
+                    </p>
+                    <li><b>Throws:</b></li>
+                    <p>NullPointerException</p>
+                    <li><b> Returns:</b></li>
+                    <p> Returns true if Successful or Returns false</p>
+                    <li><b> Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture22.png"></p>
+                </ul>
+            </div>
+            <div id="openPageCommons"><br>
+                <h3>24. public void openPageCommons(String url) </h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public void openPageCommons(String url)</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is using in both openPage with profile and openPage without profile methods To avoid the code repetition, providing a new method which get the driver from driverManager and set the driver for required classes
+                    </p>
+                    <li><b>Returns:</b></li>
+                    <p>Returns nothing</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture23.png"></p>
+                </ul>
+            </div>
+            <div id="openUrl"><br>
+                <h3>25. public boolean openURL(String url, String os, String osVersion, String browser, String browserVersion)
+                </h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean openURL(String url, String os, String osVersion, String browser, String browserVersion)
+                    </h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will open url with given parameter Returns: Returns nothing
+                    </p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture24.png"></p>
+                </ul>
+            </div>
+            <div id="openUrl_capabilities"><br>
+                <h3>26. public boolean openURL(String url, String os, String osVersion, String browser, String browserVersion,DesiredCapabilities capabilities)</h3>
+                <ul>
+
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean openURL(String url, String os, String osVersion, String browser, String browserVersion,DesiredCapabilities capabilities)</h4>
+                    <li><b>Purpose:</b></li>
+                    <p>This method will open url with given parameter</p>
+                    <li><b>Throws:</b></li>
+                    <p>IllegalArgumentException</p>
+                    <li><b>Returns:</b></li>
+                    <p>Returns nothing</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture25.png"></p>
+                </ul>
+            </div>
+            <div id="quitBrowser"><br>
+                <h3>27. public boolean quitBrowser()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>public boolean quitBrowser()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will quit Browser.</p>
+                    <li><b>Throws:</b></li>
+                    <p>NullPointerException</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns true if Successful or Returns false</p>
+                </ul>
+            </div>
+            <div id="refreshBrowser"><br>
+                <h3>28. public boolean refreshBrowser() </h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>public boolean refreshBrowser()</h4>
+                    <li><b>Purpose:</b></li>
+                    <p> This method will refresh Browser.</p>
+                    <li><b>Throws:</b></li>
+                    <p>NullPointerException</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns true if Successful or Returns false</p>
+                    <li><b>Usage:</b></li>
+                    <p><img src="resources/img/services guides/browserclass/Picture26.png"></p>
+                </ul>
+            </div>
+            <div id="setupDriverForRequiredClasses"><br>
+                <h3>29. private void setupDriverForRequiredClasses()</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>private void setupDriverForRequiredClasses()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method helps to share the same driver to all required classes in framework Set the driver for find class Set the driver for waitElement class Set the driver for click class Set the driver for in ThreadPool class Set the driver
+                        for mouseMove class</p>
+                    <li><b>Returns: </b></li>
+                    <p> Returns nothing</p>
+                </ul>
+            </div>
+            <div id="setupDriverForRequiredClassesForParallel"><br>
+                <h3>30. private void setupDriverForRequiredClassesForParallel()</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>private void setupDriverForRequiredClassesForParallel()</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method helps to share the same driver to all required classes in framework Set the driver for find class Set the driver for waitElement class Set the driver for click class Set the driver for in ThreadPool class Set the driver
+                        for mouseMove class</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns nothing</p>
+                </ul>
+            </div>
+            <div id="uploadImage"><br>
+                <h3>31. private boolean uploadImage(File file)</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>private boolean uploadImage(File file)</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method is used to upload screenshot of the web site to the report server whenever the test method is failed.</p>
+                    <li><b>Returns: </b></li>
+                    <p>Returns true if Successful or Returns false
+                    </p>
+                </ul>
+            </div>
+            <div id="validateURL"><br>
+                <h3>32. private boolean validateURL(String url)</h3>
+                <ul>
+                    <li><b>Method Name: </b></li>
+                    <h4>private boolean validateURL(String url)</h4>
+                    <li><b>Purpose: </b></li>
+                    <p>This method will helps to validate the provided URL is correct or not It accepts url as a string And returns boolean.
+                    </p>
+                    <li><b>Throws:</b></li>
+                    <p>IOException</p>
+                    <li><b>Returns:</b></li>
+                    <p>Returns true if Successful or Returns false</p>
+                </ul>
+            </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

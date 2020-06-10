@@ -1,0 +1,209 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>Checkbox Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#clickCheckBoxById">clickCheckBoxById(LocatorType,String,SelectType) (boolean)</a></li>
+            <li><a href="#clickCheckBoxByValue">clickCheckBoxByValue(LocatorType,String
+                    String,SelectType)(boolean)</a></li>
+            <li> <a href="#clickCheckBoxByCssSelector">clickCheckBoxByCssSelector(LocatorType,String,SelectType)(boolean)</a>
+            </li>
+            <li><a href="#isCheckBoxSelectedById">isCheckBoxSelectedById(LocatorType,String)(boolean)</a></li>
+            <li><a href="#selectCheckBoxByValue">selectCheckBoxByValue(LocatorType,String,String)(boolean)</a></li>
+            <li><a href="#isCheckBoxSelectByValue">isCheckBoxSelectByValue(LocatorType,String,String)(boolean)</a></li>
+            <li><a href="#isCheckBoxSelectByCssSelector">isCheckBoxSelectByCssSelector(LocatorType,String)(boolean)</a></li>
+            <li><a href="#setFinderIfinderVoid">setFinder(IFind)(void)</a></li>
+
+        </ul>
+
+        <div id="clickCheckBoxById"><br>
+            <h3>1. public boolean clickCheckBoxById(LocatorType locator,String elementId,SelectType selectType)
+            </h3>
+            <ul>
+                <li><b>Method Name: </b></li>
+
+                <h4>public boolean clickCheckBoxById(LocatorType locator,String elementId,SelectType selectType)
+                </h4>
+
+                <li><b>Purpose :</b></li>
+
+                <p>This Method will identify element by there ID and perform click operation on element.</p>
+
+                <p>Parameters: This methods having three parameters:</p>
+                <ul>
+                    <li>Locator- It identifies the WebElement.</li>
+                    <li>ElementId- It is Value of locator type.</li>
+                    <li>SelectType- It is selectorType to select the check box(CHECK/UNCHECK)</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>This method returns True if element is Clicked or False if not clicked.</p>
+
+                <li><b>Uses :</b></li>
+                <p><img src="resources/img/services guides/checkboxclass/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="clickCheckBoxByValue"><br>
+            <h3>2. public boolean clickCheckBoxByValue(LocatorType locator, String elementName, String elementValue, SelectType selectType)</h3>
+            <li><b>Method Name: </b></li>
+            <h4>public boolean clickCheckBoxByValue(LocatorType locator, String elementName, String elementValue, SelectType selectType)</h4>
+            <li><b>Purpose : </b></li>
+            <p>This method performs click operation on element by there value.</p>
+
+            <p>Parameters: This method having four parameters:</p>
+            <ul>
+                <li>Locator - It is identifier of WebElement.</li>
+                <li>elementName - It is name of locator type.</li>
+                <li>elementValue - It is value of locator type.</li>
+                <li>SelectType - It is select type for selection of check box(CHECK/UNCHECK).</li>
+            </ul>
+            <li><b>Returns:</b></li>
+            <p>This method returns true if checked or false if not.</p>
+            <li><b>Uses : </b></li>
+            <p><img src="resources/img/services guides/checkboxclass/Picture2.png"></p>
+        </div>
+        <div id="clickCheckBoxByCssSelector"><br>
+            <h3>3. Public boolean clickCheckBoxByCssSelector(LocatorType locator,String elementCssSelector,SelectType selectType)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>Public boolean clickCheckBoxByCssSelector(LocatorType locator,String elementCssSelector,SelectType selectType)</h4>
+
+                <li><b>Purpose :</b></li>
+                <p>This method performs click operation on check box by using CSS Selector.</p>
+
+                <p>Parameters: This method having three parameters.</p>
+                <ul>
+                    <li>Locator - It is identifier of WebElement</li>
+                    <li>CssSelector - It is value for locator.</li>
+                    <li>SelectType - It is select type for selection of check box(CHECK/UNCHECK).</li>
+                </ul>
+                <li><b>Returns: </b></li>
+                <p>This method returns true for if clicked and false for if not.</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/checkboxclass/Picture3.png"></p>
+            </ul>
+        </div>
+        <div id="isCheckBoxSelectedById"><br>
+            <h3>4. public boolean isCheckBoxSelectedById(LocatorType locator,String elementId)</h3>
+            <ul>
+                <li><b>Method Name: </b></li>
+                <h4>public boolean isCheckBoxSelectedById(LocatorType locator,String elementId)</h4>
+                <li><b>Purpose: </b></li>
+                <ul>
+                    <li> This method checks whether check box is clicked or not by ID.</li>
+                    <li> If check box is clicked it returns true otherwise returns false.</li>
+                </ul>
+                <li><b> Parameters:</b></li>
+                <p>This method having two parameters:</p>
+                <ul>
+                    <li>Locator: It is identifier of WebElement.</li>
+                    </li>elementId: It is value for locator.</li>
+                </ul>
+                <li><b>Return:</b></li>
+                <p>This method returns true if checked otherwise returns false.</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/checkboxclass/Picture4.png"></p>
+            </ul>
+        </div>
+        <div id="selectCheckBoxByValue"><br>
+            <h3>5. public boolean selectCheckBoxByValue(LocatorType locator,String elementName,String Value)
+            </h3>
+            <ul>
+                <li><b>Method Name: </b></li>
+                <h4>public boolean selectCheckBoxByValue(LocatorType locator,String elementName,String Value)
+                </h4>
+                <li><b>Purpose:</b></li>
+                <p>This method performs selection on check box by there value.</p>
+
+                <p>Parameters: This method having three parameters</p>
+                <ul>
+                    <li>Locator- It is identifier of WebElement.</li>
+                    <li>elementName- It is value for locator.</li>
+                    <li>Value- Value of that element.</li>
+                </ul>
+                <b>
+                    <li>Returns:
+                </b></li>
+                <p>This method returns true if check box is selected and false if not.</p>
+
+                <b>
+                    <li> Uses:
+                </b></li>
+                <p><img src="resources/img/services guides/checkboxclass/Picture5.png"></p>
+            </ul>
+        </div>
+        <div id="isCheckBoxSelectByValue"><br>
+            <h3>6. public boolean isCheckBoxSelectByValue(LocatorType locator,String elementName,String value)
+            </h3>
+            <li><b>Method Name: </b></li>
+            <h4>public boolean isCheckBoxSelectByValue(LocatorType locator,String elementName,String value)</h4>
+            <li><b>Purpose:</b></li>
+            <p>This method checks if check box is selected or not by there value.</p>
+
+            <p>Parameters: This method have three parameters</p>
+            <ul>
+                <li>Locator- It is identifier of WebElement</li>
+                <li>elementName- It is value for locator</li>
+                <li>value- It is value of that element.</li>
+            </ul>
+            <li><b>Returns: </b></li>
+            <p>This method returns true if checkbox is selected otherwise false.</p>
+
+            <li><b>Exception: </b></li>
+            <p>noSuchElementException</p>
+
+            <li>
+                <b>Uses:</b>
+            </li>
+            <p><img src="resources/img/services guides/checkboxclass/Picture6.png"></p>
+            </ul>
+        </div>
+        <div id="isCheckBoxSelectByCssSelector"><br>
+            <h3>7. public boolean isCheckBoxSelectByCssSelector(LocatorType locator,String elementCssSelector)
+            </h3>
+            <ul>
+                <li><b>Purpose:</b></li>
+                <p>This method checks if check box is selected or not by the CssSelector.</p>
+
+                <li><b>Parameters: </b>Parameters: </li>
+                <p>This method having two parameters</p>
+                <ul>
+                    <li>Locator - It is identifier of WebElement which is CssSelector.</li>
+                    <li>elementCssSelector - It is value for locator.</li>
+                </ul>
+                <li><b>Returns: </b></li>
+                <p>It returns true if check box is selected and false if not.</p>
+
+                <li><b>Exception: </b></li>
+                <p>noSuchElementException</p>
+
+                <li><b>Uses:</b></li>
+                <p><img src="resources/img/services guides/checkboxclass/Picture7.png"></p>
+            </ul>
+
+        </div>
+        <div id="setFinderIfinderVoid"><br>
+            <h3>8. public void setFinder(IFind finder)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setFinder(IFind finder)</h4>
+                <li><b>Purpose: </b></li>
+                <ul>
+                    <li>This method accepts the reference variable of IFind interface.</li>
+                    <li>This method is use to refer instance variable.</li>
+                </ul>
+                <li><b>Returns:</b></li>
+                <p>It will returns Nothing.</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

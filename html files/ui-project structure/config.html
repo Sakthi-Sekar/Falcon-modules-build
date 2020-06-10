@@ -1,0 +1,68 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <h3>Understanding config. properties:</h3>
+    <hr>
+    <p class="bold">
+
+        This is the main file which set up the complete test project. Here we will discuss all the main configurations one by one.</p>
+
+    <p> <b>1.SuiteFileName</b> – This is the property where we store the master *.xml file. In our case, it is testng.xml</p>
+
+    <p> <b>2.Testreport.uploadurl</b>– This is the property where we store the report dashboard report upload URL. In our case, it is <a href="http://10.10.10.150:8083/testreport/upload">http://10.10.10.150:8083/testreport/upload</a>
+    </p>
+
+    <p> <b>3.Onfailureimage.uploadurl</b> - This is the property where we store the report dashboard image upload URL. In our case, it is
+        <a href="http://10.10.10.150:8084/image/upload">http://10.10.10.150:8084/image/upload</a></p>
+
+    <p> <b>4.Instances</b> – This is the property where we store the number of parallel instances to run. It will create numbers of threads to execute script parallel.</p>
+
+    <p> <b>5.ClientName</b> – This is the property where we store the Client Name to identify the Report Dashboard.
+    </p>
+
+    <p> <b>6.ModuleName</b> – This is the property where we store the list of suite files, comma separated, to execute. Module name is the name of the suite file which are present in src/main/resources/suitefile/ without extension. To add multiple modules(suites)
+        provide multiple ModuleName values separated by comma (,)
+    </p>
+
+
+
+    <p class="tip">
+        <b>For Example:</b><br> ModuleName=sample1,sample2,sampe3
+    </p>
+
+    <p><b>7.BrowserCaps</b> – This is the property where we store the test browser details according to instances.
+    </p>
+    <div class="info">
+        <Strong>Note:</Strong> To add multiple browsers provide multiple BrowserCaps value separated by comma (,).
+    </div>
+    <p>
+        Supported OS: Win, Mac, Linux<br> Supported Browsers: firefox (version
+        <=46), chrome, ie, safari </p>
+            <p class="tip">
+                <b>For Example:</b><br> WIN_7_chrome_66 (if instances as 1)<br> WIN_7_chrome_66, WIN_7_firefox_61 (if instances as2) </p>
+            <p> <b>8.Environment</b> – This is the property where we store test environment details like</p>
+            <ul>
+                <li>local (for local machine run),</li>
+                <li>grid (for Selenium Grid Machine run)</li>
+                <li>browserstack (for Browser Stack run)</li>
+            </ul>
+
+            <p> <b>9.GridIP</b> – This is the property where we store grid machine details. This property will be picked only when the environment is grid.
+            </p>
+            <p> <b>10.
+            automatic.bug.creation</b> – This is the property where we store a Boolean value to create a bug in JIRA. If True, it will create a JIRA bug according to given properties in jira.properties If False, it won’t create any bug in JIRA even if
+                there is an error or failure.</p>
+            <p><b>11.
+            capture.screenshot</b>– This is the property where we store a Boolean value to capture a screenshot on test failure. If True, it will capture a screenshot on test failure If False, it won’t capture any screenshot even if there is an error
+                or failure.</p>
+            <p><b>12. UploadResults</b>– This is the property where we store a Boolean value to upload the results on completion of execution. If True, it will upload the testNG results along with screenshot images (if capture.screenshot is true) and error
+                messages if any. If False, it won’t upload the testNG results upon completion of test execution.
+            </p>
+
+
+</body>
+
+</html>

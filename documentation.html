@@ -1,0 +1,421 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" language='javascript' src="../Project-Falcon/resources/js files/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/documentation.css">
+    <link rel="icon" type="image/x icon" href="resources/img/atmecs logo.jpg">
+    <title>Falcon-Documentation</title>
+
+</head>
+
+<body>
+
+    <!--header container-->
+    <div id="fixed-header">
+        <div class="navbar">
+            <img src="resources/img/cropped-logo2.png" class="logo">
+            <!-- <a onclick="document.getElementById('id01').style.display='block'" style="width:auto; cursor: pointer;">Sign Up</a> -->
+
+            <a href="#contactUs">Contact us</a>
+            <a href="#service">Services</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Resources</button>
+                <div class="dropdown-content">
+
+                    <a href="documentation.html">Documentation</a>
+
+                </div>
+            </div>
+            <a href="#news">About</a>
+            <a href="#home">Home</a>
+        </div>
+
+    </div>
+    <!-- <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> -->
+    <!--Breadcrumbs-->
+    <div class="breadcrumbs-section">
+        <div class="fixed-breadcrumb">
+            <ul class="breadcrumb">
+                <h2>FALCON-DOCUMENTATION</h2>
+                <li><a href="new/homepage.html">Home</a></li>
+                <li><a href="documentation.html">Resources</a></li>
+                <li><a href="documentation.html">Falcon-Documentation</a>&emsp;</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!--SIGN UP IMPLEMENTATION STARTS HERE-->
+
+    <!-- <div id="id01" class="modal-page">
+        <span onclick="document.getElementById('id01').style.display='none'" class="closeButton" title="Close Form">&times;</span>
+        <form class="modal-form" action="/action_page.php">
+            <div class="form-container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign up</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+    <!--SIGN UP IMPLEMENTATION ENDS HERE-->
+
+    <!--LEFT SIDE VERTICAL NAVIGATION STARTS HERE-->
+
+    <!--ACCORDION 1---UI Project Setup-->
+
+    <div id="sidebar-left">
+        <!-- <button style="margin-top: 2%; margin-left: 10px; font-size:20px;">Free Trial</button> -->
+        <div class="tab scroll" id="tabActive">
+
+
+
+            <button class=" accordion btn" onclick="openTab(event, 'projectSetup')" id="defaultOpen">UI Project
+                Setup</button>
+
+            <div class="panel">
+                <button class="btn" onclick="openTab(event, 'framework')">UI Framework</button>
+                <button class="btn" onclick="openTab(event, 'requirement')">Environment Requirements</button>
+                <button class="btn" onclick="openTab(event, 'setup')">SetUp UI Project</button>
+            </div>
+
+            <!--ACCORDION 2---UI Project Structure-->
+
+            <button class=" accordion btn" onclick="openTab(event, 'projectStructure')" id="defaultOpen">UI Project
+                Structure</button>
+
+            <div class="panel">
+                <button class="btn" onclick="openTab(event, 'project')">Understanding Project Structure</button>
+                <button class="btn" onclick="openTab(event, 'configproperty')">Understanding
+                    config.properties</button>
+                <button class="btn" onclick="openTab(event, 'script')">Creating and Running Test Scripts</button>
+            </div>
+
+            <!--ACCORDION 3---UI Services Guide-->
+
+            <button class=" accordion btn" onclick="openTab(event, 'service-guide')">UI Service Guide</button>
+
+            <div class="panel">
+                <button class="btn" onclick="openTab(event, 'browser-class')">Browser Class</button>
+                <button class="btn" onclick="openTab(event, 'checkbox')">CheckBox Class</button>
+                <button class="btn" onclick="openTab(event, 'clickclass')">Click Class</button>
+                <button class="btn" onclick="openTab(event, 'customlistener')">Custom Listener Class</button>
+                <button class="btn" onclick="openTab(event, 'drivermanager')">Driver Manager Class</button>
+                <button class="btn" onclick="openTab(event, 'findclass')">Find Class</button>
+                <button class="btn" onclick="openTab(event, 'keyclass')">Key Class</button>
+                <button class="btn" onclick="openTab(event, 'mousemove')">Mouse Move Class</button>
+                <button class="btn" onclick="openTab(event, 'navigation')">Navigation Class</button>
+                <button class="btn" onclick="openTab(event, 'pageclass')">Page class Helper</button>
+                <button class="btn" onclick="openTab(event, 'browserstack')">Run Mode Browser Stack class</button>
+                <button class="btn" onclick="openTab(event, 'factoryclass')">Run Mode Factory Class</button>
+                <button class="btn" onclick="openTab(event, 'gridclass')">Run Mode Grid Class</button>
+                <button class="btn" onclick="openTab(event, 'localclass')">Run Model Local Class</button>
+                <button class="btn" onclick="openTab(event, 'saucelabs')">Run Model Sauce Labs Class</button>
+                <button class="btn" onclick="openTab(event, 'scrollclass')">Scroll Class</button>
+                <button class="btn" onclick="openTab(event, 'textfield')">Text Field Class</button>
+                <button class="btn" onclick="openTab(event, 'verifyclass')">Verify Class</button>
+                <button class="btn" onclick="openTab(event, 'waitelement')">Wait Element Class</button>
+                <button class="btn" onclick="openTab(event, 'webtable')">Web Table Class</button>
+                <button class="btn" onclick="openTab(event, 'windowhandler')">Window Handler Impl Class</button>
+            </div>
+
+            <!--ACCORDION 4--OTHER INFO-->
+
+            <!-- <button class=" accordion btn" onclick="openTab(event, 'other-info')">Other Info</button>
+
+            <div class=" panel ">
+                <button class="btn" onclick="openTab(event, 'faq')">FAQ's</button>
+                <button class="btn" onclick="openTab(event, 'glossary')">Glossary</button>
+                <button class="btn" onclick="openTab(event, 'featuresvideos')">Features Videos</button>
+                <button class="btn" onclick="openTab(event, 'newsletter')">Newsletter</button>
+                <button class="btn" onclick="openTab(event, 'feedback')">Feedback</button>
+                <button class="btn" onclick="openTab(event, 'blog')">Blog</button>
+                <button class="btn" onclick="openTab(event, 'imgGrid')">Image Grid</button>
+                <button class="btn" onclick="openTab(event, 'tabImage')">Tab Gallery</button>
+                <button class="btn" onclick="openTab(event, 'pricing')">Pricing Details</button>
+                <button class="btn" onclick="openTab(event, 'calendar')">Calendar</button>
+
+            </div> -->
+        </div>
+    </div>
+
+    <!--LEFT SIDE VERTICAL NAVIGATION ENDS HERE-->
+    <!--MAIN DIV STARTS HERE-->
+
+    <div id="main">
+
+        <!--MAIN TAB CONTENT (FROM EXTERNAL FILES) INTEGRATION STARTS HERE-->
+
+        <!--Download button starts here-->
+
+        <!-- <a href="../FalconDocument.zip" id="download" class="downloadLink" title="Download File" onclick="alertBox()" style="border-radius: 100px; margin-left: 93%;"><i class="fa fa-download" style="margin-top:3%;"></i></a> -->
+
+        <!--Download button ends here-->
+
+        <div class="container">
+
+            <!--Scroll to top buton -->
+            <button onclick="topFunction()" id="topBtn" title="Go to top">&#8679;</button>
+
+            <!--HTML content files integration-->
+
+            <!--UI PROJECT STRUCTURE-->
+            <div id="projectSetup" class="tabcontent">
+                <div class="banner" title="html files/ui-project setup/uiprojectsetup.html"></div>
+            </div>
+
+            <!--UI FRAMEWORK CONTENT-->
+            <div id="framework" class="tabcontent">
+                <div class="banner" title="html files/ui-project setup/uiframework.html"></div>
+            </div>
+
+            <!--ENVIRONMENT REQUIREMENT CONTENTS-->
+            <div id="requirement" class="tabcontent">
+                <div class="banner" title="html files/ui-project setup/envreq.html"></div>
+            </div>
+
+            <!-- SETUP UI PROJECT-->
+            <div id="setup" class="tabcontent">
+                <div class="banner" title="html files/ui-project setup/setup.html"></div>
+            </div>
+
+            <!--UI PROJECT STRUCTURE-->
+            <div id="projectStructure" class="tabcontent">
+                <div class="banner" title="html files/ui-project structure/uiprojectstructure.html"></div>
+            </div>
+
+
+            <!--UNDERSTANDING PROJECT-->
+            <div id="project" class="tabcontent">
+                <div class="banner" title="html files/ui-project structure/projectstructure.html"></div>
+            </div>
+            <!--CONFIG PROPERTIES-->
+            <div id="configproperty" class="tabcontent link-text">
+                <div class="banner" title="html files/ui-project structure/config.html"></div>
+            </div>
+
+            <!--CREATING AND RUNNING TESTSCRIPT-->
+            <div id="script" class="tabcontent">
+                <div class="banner" title="html files/ui-project structure/create&run.html"></div>
+            </div>
+
+            <div class="tab-services">
+
+                <!--Main index--UI Service Guides-->
+
+                <!--UI SERVICE-GUIDE CONTENT-->
+                <div id="service-guide" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/uiservicesguide.html"></div>
+                </div>
+
+                <!--Browser class-->
+                <div id="browser-class" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/browserclass.html"></div>
+                </div>
+
+                <!--Checkbox class-->
+                <div id="checkbox" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/checkboxclass.html"></div>
+                </div>
+
+                <!--Click class-->
+                <div id="clickclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/clickclass.html"></div>
+                </div>
+
+                <!--CustomListener class-->
+                <div id="customlistener" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/customlistener.html"></div>
+                </div>
+
+                <!--Drivermanager class-->
+                <div id="drivermanager" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/drivermanager.html"></div>
+                </div>
+
+                <!--Find class-->
+                <div id="findclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/findclass.html"></div>
+                </div>
+
+                <!--Key class-->
+                <div id="keyclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/keyclass.html"></div>
+                </div>
+
+                <!--Mousemove class-->
+                <div id="mousemove" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/mousemove.html"></div>
+                </div>
+
+                <!--Navigation class-->
+                <div id="navigation" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/navigationclass.html"></div>
+                </div>
+
+                <!--Page class Helper-->
+                <div id="pageclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/pageclasshelper.html"></div>
+                </div>
+
+                <!--RUnModeBrowserStack class-->
+                <div id="browserstack" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/runmodebrowserstack.html"></div>
+                </div>
+
+                <!--RunModeFactory class-->
+                <div id="factoryclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/runmodefactoryclass.html"></div>
+                </div>
+
+                <!--RunModeGrid class-->
+                <div id="gridclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/runmodegridclass.html"></div>
+                </div>
+
+                <!--RunModelLocal class-->
+                <div id="localclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/runmodelocalclass.html"></div>
+                </div>
+
+                <!--RunModelSauceLabs class-->
+                <div id="saucelabs" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/runmodelsaucelabclass.html"></div>
+                </div>
+
+                <!--Scroll class-->
+                <div id="scrollclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/scrollclass.html"></div>
+                </div>
+
+                <!--Textfield class-->
+                <div id="textfield" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/textfieldclass.html"></div>
+                </div>
+
+                <!--Verify class-->
+                <div id="verifyclass" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/verifyclass.html"></div>
+                </div>
+
+                <!--WaitElement class-->
+                <div id="waitelement" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/waitelementclass.html"></div>
+                </div>
+
+                <!--WebTable class-->
+                <div id="webtable" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/webtableclass.html"></div>
+                </div>
+
+                <!--WindowHandlerImpl class-->
+                <div id="windowhandler" class="tabcontent">
+                    <div class="banner" title="html files/ui-services guide/windowhandlerImpl.html"></div>
+                </div>
+
+                <!--Main index--UI Service Guides-->
+
+                <!--OTHER INFO CONTENT-->
+                <div id="other-info" class="tabcontent">
+                    <div class="banner" title="html files/other-info/otherinfo.html"></div>
+                </div>
+                <!--FAQ's-->
+                <div id="faq" class="tabcontent">
+                    <div class="banner" title="html files/other-info/faq.html"></div>
+                </div>
+
+                <!--Glossary-->
+                <div id="glossary" class="tabcontent">
+                    <div class="banner" title="html files/other-info/glossary.html"></div>
+                </div>
+
+                <!--Features Videos-->
+                <div id="featuresvideos" class="tabcontent">
+                    <div class="banner" title="html files/other-info/featuresvideos.html"></div>
+                </div>
+                <!--Webinars-->
+                <div id="webinars" class="tabcontent">
+                    <div class="banner" title="html files/other-info/featuresvideos.html"></div>
+                </div>
+                <!--Newsletter-->
+                <div id="newsletter" class="tabcontent">
+                    <div class="banner" title="html files/other-info/newsletter.html"></div>
+                </div>
+                <!--Feedback-->
+                <div id="feedback" class="tabcontent">
+                    <div class="banner" title="html files/other-info/feedback.html"></div>
+                </div>
+                <!--Blogs-->
+                <div id="blog" class="tabcontent">
+                    <div class="banner" title="html files/other-info/blog.html"></div>
+                </div>
+
+                <!--Image Grid-->
+                <div id="imgGrid" class="tabcontent">
+                    <div class="banner" title="html files/other-info/imageGrid.html"></div>
+                </div>
+
+                <!--Tab Image -->
+                <div id="tabImage" class="tabcontent">
+                    <div class="banner" title="html files/other-info/tabGallery.html"></div>
+                </div>
+
+                <!--Pricing Details -->
+                <div id="pricing" class="tabcontent">
+                    <div class="banner" title="html files/other-info/pricing.html"></div>
+                </div>
+
+                <!--Calendar -->
+                <div id="calendar" class="tabcontent">
+                    <div class="banner" title="html files/other-info/calendar.html"></div>
+                </div>
+
+            </div>
+            <!--MAIN TAB CONTENT (FROM EXTERNAL FILES) INTEGRATION ENDS HERE-->
+
+            <!--TO DISPLAY IMAGES AFTER ZOOM STARTS HERE-->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" style="width: 100%; height: 500px;">
+                <div id="caption"></div>
+            </div>
+            <!--TO DISPLAY IMAGES AFTER ZOOM ENDS HERE-->
+
+        </div>
+    </div>
+    <!--MAIN DIV STARTS HERE-->
+
+    <!--iNTEGRATION OF EXTERNAL JAVASCRIPT FILE TO READ THE JS STARTS HERE-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--iNTEGRATION OF EXTERNAL JAVASCRIPT FILE TO READ THE JS STARTS HERE-->
+
+</body>
+
+</html>

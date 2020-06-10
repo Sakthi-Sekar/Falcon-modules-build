@@ -1,0 +1,77 @@
+<html>
+
+<head></head>
+
+<body>
+    <h3>Creating and Running Test Scripts:</h3>
+    <hr>
+    <p><em>In this we will look how to create Test Scripts and execute them as per test requirement.</em>
+    </p>
+
+    <p><b><em>Step 1 : </em>Creation of Test Scripts:</b></p>
+    <ul>
+        <li>Create Your Test Scripts under testscript folder as shown in below.</li>
+        <li>Create a simple class in testscript folder.</li>
+    </ul>
+    <p><img src="resources/img/project structure/create&run/Picture18.png" class="zoom imgborder" onclick="showImg(this)"></p>
+    <p><b><em>Step2 : </em>Adding Test Scripts to Suite File:</b></p>
+    <ul>
+        <li>Create a Suite File under <b>src/main/resources/suitefile</b> and Add the Created Test
+            Script to it
+            as below:</li>
+        <li>In sample.xml we need to add class which we want to execute.</li>
+    </ul>
+    <p> <img src="resources/img/project structure/create&run/Picture19.png" class="zoom imgborder" onclick="showImg(this)"></p>
+    <p><b><em>Step 3 : </em>Adding Suite Files to testng.xml:</b></p>
+    <ul>
+        <li> Add created suite files to <b>testng.xml</b> as below:</li>
+        <li> We can add more than one sample.xml files and this suites adds to testNG.xml file</li>
+    </ul>
+    <p><img src="resources/img/project structure/create&run/Picture20.png" class="zoom imgborder" onclick="showImg(this)"></p>
+    <p><b><em>Step 4 : </em>Setting up Test Environment in config.properties:</b></p>
+    Configure Test Environment under config.properties as below:<br>
+
+    <b> Important Configurations:</b>
+    <ul>
+        <li><b>i.testreport.uploadurl</b>– Report Dashboard Upload URL (if uploadResults=true)</li>
+        <li><b>ii.onfailureimage.uploadurl</b>– Report Dashboard Image Upload URL (if uploadResults=true
+            & capture.screenshot=true)</li>
+        <p> <img src="resources/img/project structure/create&run/Picture21.png" class="zoom imgborder" onclick="showImg(this)"></p>
+        <li><b>iii.instances</b>– Number of Parallel Test Runs (1 for Single Run, 2 for Parallel
+            Run)</li>
+        <li> <b>iv.ClientName</b>– Client Name to identify Reports under Report Dashboard</li>
+        <li> <b>v.ModuleName</b>– This is the suite files separated by comma (,) without any
+            extension.</li>
+            
+        <p><b>For Example:</b>
+        demoSuite</p>
+        <p> <img src="resources/img/project structure/create&run/Picture22.png" class="zoom imgborder" onclick="showImg(this)"></p>
+        <li> <b>vi.BrowserCaps</b>– Browser and OS Details, Syntax will be
+            OSName_OSVersion_BrowserName_BrowserVersion
+            We can ‘ve multiple BrowserCaps for Parallel run when instances are more than 1.</li>
+           
+        <p><b>For Example:</b><br>
+        BrowserCaps=WIN_10_chrome_66 (when instances as 1).<br>
+        BrowserCaps=WIN_10_chrome_66,WIN_10_ie_11 (when instances as 2).</p>
+        <p><img src="resources/img/project structure/create&run/Picture23.png" class="zoom imgborder" onclick="showImg(this)"></p>
+        <li> <b>vii.Environment/gridIp</b> – This will work as below:</li>
+        <b>Local</b> – To Run in the Local Machine.<br>
+        <b> Grid</b> – To Run in the Grid Machine (gridIP should be mentioned).<br>
+        <b>Browserstack</b> – To Run in the Cloud Machine (Browser Stack).<br>
+        <p><img src="resources/img/project structure/create&run/Picture24.png" class="zoom imgborder" onclick="showImg(this)"></p>
+        <li><b>viii.automatic.bug.creation</b> – To Create JIRA Issues if there is an error.</li>
+        <li><b>xi.capture.screenshot</b> – To Capture Screenshot if there is an error.</li>
+        <li> <b>x.uploadResults</b> – To Upload Results to Report Dashboard.</li>
+        <p> <img src="resources/img/project structure/create&run/Picture25.png" class="zoom imgborder" onclick="showImg(this)"></p>
+    </ul>
+    <p><b><em>Step 5 : </em>Running Test Scripts:</b></p>
+    <p> To Run the Project, Right Click on the <b>Project</b> and Click on <b>Run as</b> and then
+        <b>Maven
+            Test</b> as shown in
+        below:</p>
+    <p> <img src="resources/img/project structure/create&run/Picture26.png" class="zoom imgborder" onclick="showImg(this)"></p>
+
+
+</body>
+
+</html>

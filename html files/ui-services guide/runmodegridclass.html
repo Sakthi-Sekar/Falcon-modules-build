@@ -1,0 +1,108 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>RunModeGrid Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#managerBrowserVersion">public IDistributionManager getRunMode(String runMode, String os,
+                    String
+                    osVersion, String
+                    browser,
+                    String browserVersion)</a></li>
+            <li><a href="#managerDesiredCapabilities">public IDistributionManager getRunMode(String runMode, String
+                    os, String
+                    osVersion, String
+                    browser, String browserVersion,DesiredCapabilities capabilities)</a></li>
+            <li><a href="#generateHubURL">private String generateHubURL()
+                </a></li>
+            <li><a href="#webdriverGetDriver">public WebDriver getDriver()</a></li>
+            <li><a href="#voidsetCapabilities">public void setCapabilities(String enableLocal, String os, String
+                    osVersion,
+                    String
+                    browser,
+                    String
+                    browserVersion)</a></li>
+            <li><a href="#getGridIP">private String getGridIP()</a></li>
+        </ul>
+        <div id="managerBrowserVersion"><br>
+            <h3>1. public IDistributionManager getRunMode(String runMode, String os, String osVersion, String browser, String browserVersion)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public IDistributionManager getRunMode(String runMode, String os, String osVersion, String browser, String browserVersion)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used get runMode as string and according to string given it will call different type of runMode methods.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns object of runMode as per selected.</p>
+            </ul>
+        </div>
+        <div id="managerDesiredCapabilities"><br>
+            <h3>2. public IDistributionManager getRunMode(String runMode, String os, String osVersion, String browser, String browserVersion,DesiredCapabilities capabilities)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public IDistributionManager getRunMode(String runMode, String os, String osVersion, String browser, String browserVersion,DesiredCapabilities capabilities)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used get runMode as string and according to string given it will call different type of runMode methods.Using this method we can set capabilities as per OS,OsVersion,browser,browserVersion
+                </p>
+                <li><b>Returns:</b></li>
+                <p>Returns object of runMode as per selected with Desired Capabilities.</p>
+            </ul>
+        </div>
+        <div id="generateHubURL"><br>
+            <h3>3. private String generateHubURL()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private String generateHubURL()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will take browser stack credentials and with help of credentials it will generate HubUrl.
+                </p>
+                <li><b>Returns:</b></li>
+                <p>Returns HubUrl</p>
+            </ul>
+        </div>
+        <div id="webdriverGetDriver"><br>
+            <h3>4. public WebDriver getDriver()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public WebDriver getDriver()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is to get the driver object from Browser class.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns current driver object</p>
+                <li><b>Usage:</b></li>
+                <p><img src="resources/img/services guides/gird/Picture1.png"></p>
+            </ul>
+        </div>
+        <div id="voidsetCapabilities"><br>
+            <h3>5. public void setCapabilities(String enableLocal, String os, String osVersion, String browser, String browserVersion)
+            </h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setCapabilities(String enableLocal, String os, String osVersion, String browser, String browserVersion)
+                </h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is used to set capabilities OS, OsVersion, browser, browser Version</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+            </ul>
+        </div>
+        <div id="getGridIP"><br>
+            <h3>6. private String getGridIP()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private String getGridIP()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is to get the GridIP</p>
+                <li><b>Throws:</b></li>
+                <p>NullPointerException</p>
+                <li><b>Returns:</b></li>
+                <p>Returns current driver object</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

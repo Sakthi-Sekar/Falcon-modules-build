@@ -1,0 +1,970 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*-----BASIC SETUP-----*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    counter-reset: section;
+}
+
+
+/*---fixed-header---*/
+
+#fixed-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.headerClass {
+    background: -webkit-linear-gradient(white, white);
+    /* -webkit-text-fill-color: transparent; */
+    position: fixed;
+}
+
+.container {
+    width: auto;
+    /* margin: 0 auto; */
+    /* Center the DIV horizontally */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+}
+
+.navbar a {
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/*---HEADER LOGO---*/
+
+.logo {
+    height: auto;
+    width: 200px;
+    vertical-align: middle;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.full-content a {
+    color: #168fae !important;
+}
+
+.full-content h2 {
+    color: black;
+}
+
+.count li::before {
+    counter-increment: section;
+    content: "Method " counter(section) ": ";
+}
+
+
+/*----HEADER NAVIGTION MOUSE HOVER AND DROPDOWN MOUSE HOVER---*/
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+
+/*---HEADER NAVIGATION DROPDOWN---*/
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: white;
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+
+/*----HEADER DROPDOWN CONTENT------*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    padding: 6px;
+    /* box-shadow: 8px 8px 16px 16px rgba(0, 0, 0, 0.2); */
+    top: 43px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    /* display: unset;    */
+}
+
+.dropdown-content a:hover {
+    /* background-color: #ddd; */
+    color: #168fae !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/**---BREADCRUMB----**/
+
+.fixed-breadcrumb {
+    margin-top: -1%;
+    width: 100%;
+    margin-left: -1%;
+}
+
+.breadcrumb h2 {
+    float: left;
+    /* margin-left: 1%; */
+    margin-top: 0%;
+    color: white;
+    padding: 10px;
+    font-weight: 300px;
+}
+
+ul.breadcrumb {
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #168fae !important;
+    margin-bottom: 0;
+    text-align: right;
+    margin-top: 15px;
+    font-weight: 300px;
+    left: 0;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: '❯';
+}
+
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/**---LEFT SIDEBAR----*/
+
+#sidebar-left {
+    float: left;
+    width: 22%;
+    margin-top: 80px;
+}
+
+
+/**--MAIN CONTAINER--*/
+
+#main {
+    float: left;
+    width: 77%;
+    margin-top: 70px;
+}
+
+#sidebar-left,
+#main {
+    min-height: 600px;
+}
+
+.container {
+    width: auto;
+    /* margin: 0 auto; */
+    /* Center the DIV horizontally */
+}
+
+
+/* vertical navigation tab */
+
+.tab {
+    background-color: white;
+    font-size: medium;
+    margin-top: 0%;
+    position: fixed;
+    margin-bottom: 0.8%;
+}
+
+
+/* vertical navigation tab button */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 5px 2px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s;
+    text-rendering: optimizeLegibility;
+    background: 0 0;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+
+/*  Underline of buttons on hover */
+
+
+/* Style the tab content */
+
+.tabcontent {
+    padding: 1px 1px;
+    border-left: none;
+    color: black;
+    text-align: justify;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 10px;
+    /*font-family: Roboto, Arial, Helvetica, sans-serif;*/
+    margin-top: 10px;
+}
+
+
+/*.tabcontent b {
+    font-weight: bold;
+}*/
+
+
+/**tooltip**/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*---Accordion---*/
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion::before {
+    /* content: '❯';
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    padding-right: 0.5em; */
+    content: '❯';
+    color: #168fae !important;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.accordion-down::before {
+    transform: rotate(90deg);
+    color: #168fae !important;
+}
+
+.active:after {
+    content: '';
+}
+
+.panel {
+    padding: 0 10px;
+    max-height: 0;
+    margin-left: 10%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/*--IMAGE ZOOM IN AND OUT--*/
+
+
+/*--BIG IMAGE ZOOM--*/
+
+#myImg {
+    border-radius: 5px;
+    /* cursor: pointer; */
+    transition: 0.5s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    padding-bottom: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+    /*Border color*/
+    border: solid 1px black;
+}
+
+.zoom {
+    height: 50%;
+    width: 50%;
+    border: solid 5px rgb(179, 199, 219);
+    border-image: linear-gradient(rgb(81, 81, 199), rgb(182, 67, 67)) 27 /35px;
+    margin-left: 10%;
+}
+
+.zoom img:hover {
+    border-color: orange;
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*--INFO NOTES and TIPS--*/
+
+.info {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #f0f7fb;
+    /*  background-image: url(../img/noteicon.webp);*/
+    background-position: 9px 0px;
+    background-repeat: no-repeat;
+    border: solid 1px #3498db;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 15px 60px;
+    border-left: solid 4px #3498db;
+}
+
+.tip {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #285a1900;
+    /* background-image: url(../img/tipsicon.webp);*/
+    background-position: 9px 0px;
+    background-repeat: no-repeat;
+    border: solid 1px #3498db;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 15px 60px;
+    border-left: solid 4px #3498db;
+    line-height: 1.6;
+}
+
+ul li {
+    display: list-item;
+    /* This has to be "list-item" */
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+.imgborder {
+    border-image: linear-gradient( #168fae, #168fae) 27 / 35px;
+    border-style: dashed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+li em {
+    /* background-color: #168fae !important; */
+    font-weight: bolder;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.box {
+    transition: height 1s ease-out;
+    width: 300px;
+    height: 0px;
+    background: red;
+    z-index: 9999;
+}
+
+.open:hover>.box {
+    height: 400px;
+    transition: height 1s ease-out;
+}
+
+.open {
+    text-align: center;
+    border: 2px solid #3F51B5;
+    background: #673AB7;
+    color: #eaeaea;
+}
+
+
+/**---vertical navigation scroll---**/
+
+.scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 470px;
+    float: right;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #168fae !important;
+}
+
+
+/*---TAB 2 - SERVICES GUIDES---*/
+
+.tab-services h3 {
+    /* color:  #168fae !important; */
+    color: #000000;
+}
+
+.tab-services h4 {
+    color: #168fae !important;
+}
+
+iframe[seamless] {
+    border: none;
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+
+.active,
+.btn:hover {
+    color: #168fae !important;
+    text-decoration: underline;
+}
+
+
+/* index border style*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    width: 25%;
+    height: 10%;
+    margin: 10px;
+    padding: 7px 10px;
+    text-align: left;
+    border: 1px solid #c1c7d0;
+}
+
+.flex-container a {
+    color: #168fae !important;
+}
+
+
+/*--brspacing--*/
+
+br {
+    line-height: 120px;
+}
+
+
+/*--Scroll to top button--*/
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #168fae !important;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 45%;
+}
+
+#topBtn:hover {
+    background-color: #555;
+}
+
+
+/*--Coming soon page--*/
+
+.bgimg {
+    /* Background image */
+    /* background-image: url('../img/other-info/download.jpg'); */
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.432)), url(../img/other-info/download.jpg);
+    /* Full-screen */
+    height: 70%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: 'Open Sans', Arial, sans-serif;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+}
+
+
+/* Position text in the top-left corner */
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+
+/* Position text in the bottom-left corner */
+
+.bottomleft {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+
+/* Position text in the middle */
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bgimg {
+    background-position: center;
+    padding-top: 102px;
+}
+
+
+/* Tree View*/
+
+ul,
+.myUL {
+    list-style-type: none;
+}
+
+
+/* Remove margins and padding from the parent ul */
+
+.myUL {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style the caret/arrow */
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+    /* Prevent text selection */
+}
+
+
+/* Create the caret/arrow with a unicode, and style it */
+
+.caret::before {
+    content: '❯';
+    color: #168fae !important;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+
+.caret-down::before {
+    transform: rotate(90deg);
+    color: #168fae !important;
+}
+
+
+/* Hide the nested list */
+
+.nested {
+    display: none;
+    width: 190px;
+    height: 100%;
+}
+
+.nested li {
+    list-style: none;
+}
+
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+
+.active {
+    display: block;
+}
+
+
+/* Read More and Less button */
+
+#more {
+    display: none;
+}
+
+#Btn {
+    margin-left: 4.1%;
+}
+
+#dots b {
+    font-size: 25px;
+}
+
+
+/*Read more and less*/
+
+.toggle-text {
+    display: none;
+    cursor: pointer;
+    color: black;
+}
+
+.toggle-text-button {
+    cursor: pointer;
+}
+
+
+/*--SHORT LINE--*/
+
+.short-line hr {
+    border: 0;
+    border-top: 2px solid #168fae !important;
+    flex: 1;
+    z-index: 1;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+/* DOWNLOAD BUTTON */
+
+.downloadLink {
+    border: none;
+    color: white;
+    background-color: #168fae;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.downloadLink:hover {
+    background-color: DodgerBlue;
+}
+
+
+/*---SIGN UP---*/
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Sign up button */
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 45%;
+    cursor: pointer;
+}
+
+
+/* Add padding to container elements */
+
+.form-container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal-page {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-form {
+    background-color: #fefefe;
+    margin: auto auto auto auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.closeButton {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.signupbtn,
+.cancelbtn {
+    margin: 8px 0;
+}
+
+.signupbtn,
+.cancelbtn:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    margin: 8px 8px;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 100px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 50%;
+        cursor: pointer;
+    }
+}

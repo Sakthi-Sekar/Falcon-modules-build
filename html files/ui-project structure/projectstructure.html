@@ -1,0 +1,120 @@
+<html>
+
+<head></head>
+
+<body>
+    <h3>Understanding Project Structure</h3>
+    <hr>
+    <p><em><b>In this, we will try to explore the project folder structure.</b></em></p>
+    <ul class="tip">
+        <li>src/main/java - Application/Library sources</li>
+        <li>src/main/resources - Application/Library resources</li>
+        <li>lib - Browser Executables</li>
+        <li>pom.xml</li>
+        <li>testng.xml</li>
+    </ul>
+
+    <h4>1.src/main/java - Application/Library sources: </h4>
+    <ul>
+        <li> This source folder contains packages like runner, testsuite and testscript.</li>
+        <li> The main package name follows as <b>${Group Id}.${Artifact Id}.</b></li>
+        <li> Earlier, we have created <b>Artifact Id</b> as <b>'falconUI'</b> and <b>Group
+                Id</b>as<b>'com.qa.automation'.</b></li>
+        <li>So Now, the package name will be <b>com.qa.automation.falconUI.</b></li>
+        <li> For any application, if you want to add source code folder like utils, helper etc.,you can ver
+            well create<b>'utils/helper' folder under 'src/main/java/${packageName}' and keep all your
+                domain utils/helper</b>under it.</li>
+    </ul>
+
+    <h4> 1.1.${packageName}/runner/</h4>
+
+    <p> This folder contains <b>‘TestNGRunner.java’</b> file which has the purpose to
+        set up
+        <b>listeners,
+            suites to run</b>
+        to <b>testng.xml</b> and <b>upload TestNG results</b> (if configured, we will discuss this more
+        detailed
+        in <a href="#configproperty">Understanding config.properties</a>).</p>
+    <div class="info">
+        <strong>NOTE: </strong>Just keep this file as it is unless you don’t have any specific
+        requirements.
+    </div>
+    </p>
+
+
+
+    <h4>1.2.${packageName}/testscript/</h4>
+
+    <p> This folder contains your actual test scripts to your application.</p>
+
+    <h4>1.3.${packageName}/testsuite/</h4>
+
+    <p> This folder contains Base Test Suite file for your test scripts.</p>
+
+
+    <h4>2.src/man/resources – Application/Library resources</h4>
+
+    <p>This resources folder contains domain specific resources and test data files.</p>
+
+
+    <h4>2.1.suitefile/</h4>
+
+    <p>This folder contains your application specific test suite files where you will mention test
+        classes or packages.</p>
+    <ul>
+        <li>Multiple suite files can be added to src/main/resources/suitefile/ directory.</li>
+        <li>Path of the suite files should be added in testng.xml.</li>
+    </ul>
+
+    <img src="resources/img/project structure/understanding project/Picture11.png" class="zoom imgborder" onclick="showImg(this)">
+
+    <h4>2.2.config.properties</h4>
+
+    <p>This is the main entry for this project and its purpose is to set up the test environment,
+        browser
+        details and other configurations like bug creation, capturing screenshot and uploading
+        testNG
+        results.
+        We will discuss this file detailed in <b onclick="myFunction()" style="text-decoration:underline;cursor:pointer;color:#168fae">Understanding config.properties</b></p>
+    <img src="resources/img/project structure/understanding project/Picture12.png" class="zoom imgborder" onclick="showImg(this)">
+
+    <h4>2.3.jira.properties</h4>
+
+    <p> This is the file where we mention jira credentials for creation of a bug if there is any
+        error
+        or
+        failure.</p>
+    <img src="resources/img/project structure/understanding project/Picture13.png" class="zoom imgborder" onclick="showImg(this)">
+
+    <h4>3.lib/</h4>
+    <p> This is the folder which contains all the driver executable like
+        <b>chromedriver.exe,IEDriverServer.exe</b>
+        etc. This two drivers is provided by default. You can replace it with updated drivers and you
+        can
+        add
+        gecko driver and MicrosoftEdge driver to lib folder.</p>
+    <img src="resources/img/project structure/understanding project/Picture14.png" class="zoom imgborder" onclick="showImg(this)">
+    <h4>4.pom.xml</h4>
+    <p>This is the main file where the Maven project info is stored and configured to run the test
+        scripts,
+        manage all the falcon and other dependencies.</p>
+    <img src="resources/img/project structure/understanding project/Picture15.png" class="zoom imgborder" onclick="showImg(this)">
+    &nbsp;
+    <div class="info">
+        <strong>Note :</strong> If you select archetype of version 0.2.0 then you need to do changes in
+        pom.xml file.You need to change following tabs with given values.</div>
+
+    <p> <b>1.&lt;falcon.ui.version&gt;0.2.0&lt;falcon.ui.version&gt;</b><br>
+        <b>2.&lt;release.repo.url&gt;http://10.10.10.150:8081/nexus/content/repositories/falcon
+            &lt;release.repo.url&gt;</b>
+    </p>
+    <p>Updated pom.xml will look like following:</p>
+    <img src="resources/img/project structure/understanding project/Picture16.png" class="zoom imgborder" onclick="showImg(this)">
+    <h4>5.testng.xml</h4>
+    <p>This is the master *.xml file where you will mention all the suite files as below:</p>
+    <img src="resources/img/project structure/understanding project/Picture17.png" class="zoom imgborder" onclick="showImg(this)">
+
+
+</body>
+
+</html>

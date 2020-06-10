@@ -1,0 +1,132 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>RunModeLocal Class</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="#localString">RunModeLocal(String)</a></li>
+            <li><a href="#localDesiredCapabilities">RunModeLocal(String, DesiredCapabilities)</a></li>
+            <li><a href="#getDriverWebDriver">getDriver() (WebDriver)</a></li>
+            <li><a href="#chromeDriverWebDriver">setChromeDriver() (WebDriver)</a></li>
+            <li><a href="#chromeDriverDesiredCapabilities">setChromeDriver(DesireCapabilities) (WebDriver)</a></li>
+            <li><a href="#firefoxDriverWebDriver">setFirefoxDriver() (WebDriver)</a></li>
+            <li> <a href="#firefoxDriverDesiredCapabilities">setFirefoxDriver(DesireCapabilities) (WebDriver)</a></li>
+
+        </ul>
+        <div id="localString"><br>
+            <h3>1. Public RunModeLocal(String browser)</h3>
+            <hr>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>Public RunModeLocal(String browser)</h4>
+
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>It is the constructor of RunModeLocal class, having one parameter string.</li>
+                    <li>It is use to initialized reference variable of WebDriver interface to any browser class like ChromeDriver(), FirefoxDriver()</li>
+                </ul>
+                <li><b>Parameters:</b></li>
+                <p>This constructor having one parameter:</p>
+                <ul>
+                    <li>Browser- It is string , in this variable we can wright any browser name like chrome, firefox, safari etc
+                    </li>
+                </ul>
+                <li><b>Exception:</b></li>
+                <p>NullPointerException</p>
+
+            </ul>
+            <div id="localDesiredCapabilities"><br>
+                <h3>2. Public RunModeLocal(String browser, DesiredCapabilities capabilities)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+
+                    <h4>Public RunModeLocal(String browser, DesiredCapabilities capabilities)</h4>
+
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>It is the constructor of RunModeLocal class, having one parameter string.</li>
+                        <li>It is use to initialized reference variable of WebDriver interface to any browser class like ChromeDriver(), FirefoxDriver()</li>
+                        <li>We can configure driver instance like FirefoxDriver, Chromedriver, InternetExplorerDriver by using desired capabilities.</li>
+                    </ul>
+                    <li><b>Parameters:</b></li>
+                    <ul>
+                        <li>Browser- It is name of browser.</li>
+                        <li>Capabilities- It is capabilities like FirefoxDriver, Chromedriver, InternetExplorerDriver.
+                        </li>
+                    </ul>
+                    <li><b>Exception:</b></li>
+                    <p>NullPointerException</p>
+
+                </ul>
+            </div>
+            <div id="getDriverWebDriver"><br>
+                <h3>3. Public WebDriver getDriver()</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>Public WebDriver getDriver()</h4>
+                    <li><b>Purpose:</b></li>
+                    <p>It will get current reference variable of WebDriver Interface.</p>
+                </ul>
+            </div>
+            <div id="chromeDriverWebDriver"><br>
+                <h3>4. Private WebDriver setChromeDriver()</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+
+                    <p>Private WebDriver setChromeDriver()</p>
+
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>It will sets the chrome webdriver and give a chromedriver.exe path to it for various operating system.
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="chromeDriverDesiredCapabilities"><br>
+                <h3>5. Private WebDriver setChromeDriver(DesireCapabilities)</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+                    <h4>Private WebDriver setChromeDriver(DesireCapabilities)</h4>
+                    <li><b>Purpose:</b></li>
+                    <ul>
+                        <li>Desired capability can also be used to configure the driver instance of selenium WebDriver.
+                        </li>
+                        <li>We can configure driver instance like Chromedriver by using desired capabilities.</li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="firefoxDriverWebDriver"><br>
+                <h3>6. Private WebDriver setFirefoxDriver()</h3>
+                <ul>
+                    <li><b>Method Name:</b></li>
+
+                    <h4>Private WebDriver setFirefoxDriver()</h4>
+
+                    <li><b>Purpose:</b></li>
+                    <p>It will sets the firefox webdriver and give a geckodriver.exe path to it for various operating system.
+                    </p>
+                </ul>
+            </div>
+            <div id="firefoxDriverDesiredCapabilities"></div><br>
+            <h3>7. Private WebDriver setFirefoxDriver(DesireCapabilities)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+
+                <h4>Private WebDriver setFirefoxDriver(DesireCapabilities)</h4>
+
+                <li><b>Purpose:</b></li>
+                <ul>
+                    <li>It will sets the firefox webdriver.</li>
+                    <li>We can configure driver instance like FirefoxDriver by using desired capabilities.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

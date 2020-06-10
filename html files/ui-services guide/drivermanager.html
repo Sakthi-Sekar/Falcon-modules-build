@@ -1,0 +1,156 @@
+<html>
+
+<head></head>
+
+<body>
+    <div class="full-content">
+        <h2>DriverManager</h2>
+        <hr>
+        <h3>List of Methods</h3>
+        <ul class="count">
+            <li><a href="getdriver">public WebDriver getDriver()</a></li>
+            <li><a href="#lincaps">protected void linCaps()</a></li>
+            <li><a href="#maccaps">protected void macCaps()</a></li>
+            <li><a href="#wincaps">protected void winCaps()</a></li>
+            <li><a href="#firefoxdriver">private WebDriver setFirefoxDriver()</a></li>
+            <li><a href="#chromedriver">private WebDriver setChromeDriver()</a></li>
+            <li><a href="#setdriver">public void setDriver(BrowserType browserType)</a></li>
+            <li><a href="#profilename">public void setDriver(BrowserType browserType, String profileName)</a></li>
+            <li><a href="#drivercapabilities">protected WebDriver setHeadlessDriverCapabilities()</a></li>
+        </ul>
+        <div id="getdriver"><br>
+            <h3>1. public WebDriver getDriver()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public WebDriver getDriver()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method is to get the driver object from Browser class.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns current driver object</p>
+                <li><b>Usage:</b></li>
+                <p><img src="resources/img/services guides/drivermanagerclass/Picture1.png"></p>
+            </ul>
+        </div>
+
+        <div id="lincaps"><br>
+            <h3>2. protected void linCaps()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>protected void linCaps()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method checks Linux capabilities i.e OS Arch, OsVersion, etc.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to check all required capabilities for Linux OS.</p>
+            </ul>
+        </div>
+
+        <div id="maccaps"><br>
+            <h3>3. protected void macCaps()</h3>
+            <ul>
+                <li>Method Name:</li>
+                <h4>protected void macCaps()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method checks mac capabilities i.e OS Arch, OsVersion, etc.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to check all required capabilities for Mac OS.</p>
+            </ul>
+        </div>
+
+        <div id="wincaps"><br>
+            <h3>4. protected void winCaps()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>protected void winCaps()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method checks Windows capabilities i.e OS Arch, OsVersion, etc.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to check all required capabilities for Windows OS.</p>
+            </ul>
+        </div>
+
+        <div id="firefoxdriver"><br>
+            <h3>5. private WebDriver setFirefoxDriver()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private WebDriver setFirefoxDriver()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will set the path for driver.Path will depend on currently using OS.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns object of FireFoxDriver</p>
+                <li><b>Usage:</b></li>
+                <p>Used to set Firefox Driver.</p>
+            </ul>
+        </div>
+
+        <div id="chromedriver"><br>
+            <h3>6. private WebDriver setChromeDriver()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>private WebDriver setChromeDriver()</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will set the path for driver.Path will depend on currently using OS.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns object of setChromeDriver</p>
+                <li><b>Usage:</b></li>
+                <p>Used to set Chrome Driver.</p>
+            </ul>
+        </div>
+
+        <div id="setdriver"><br>
+            <h3>7. public void setDriver(BrowserType browserType)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setDriver(BrowserType browserType)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will set the path for driver.Path will depend on currently using OS.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Usage:</b></li>
+                <p>Used to set Driver.</p>
+            </ul>
+        </div>
+
+        <div id="profilename"><br>
+            <h3>8. public void setDriver(BrowserType browserType, String profileName)</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>public void setDriver(BrowserType browserType, String profileName)</h4>
+                <li><b>Purpose:</b></li>
+                <p>This method will set the path for driver.Path will depend on currently using OS and Name of driver AND Profile name is given through browserType and profileName. Only works for Firefox Browser.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns nothing</p>
+                <li><b>Throws:</b></li>
+                <p>NullPointerException IllegalArgumentException</p>
+                <li><b>Usage:</b></li>
+                <p>Used to set Driver.</p>
+            </ul>
+        </div>
+
+        <div id="drivercapabilities"><br>
+            <h3>9. protected WebDriver setHeadlessDriverCapabilities()</h3>
+            <ul>
+                <li><b>Method Name:</b></li>
+                <h4>protected WebDriver setHeadlessDriverCapabilities()</h4>
+                <li><b>Purpose:</b></li>
+                <p>A headless browser is a web-browser without a graphical user interface. This method is used to set capabilities for browser but will not show any GUI.</p>
+                <li><b>Returns:</b></li>
+                <p>Returns current driver object</p>
+                <li><b>Throws:</b></li>
+                <ul>
+                    <li>NullPointerException</li>
+                    <li>IllegalArgumentException</li>
+                </ul>
+                <li><b>Usage:</b></li>
+                <p>Used to set Headless Driver.</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
